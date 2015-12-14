@@ -1,0 +1,67 @@
+//
+//  PrefixHeader.pch
+//  Project_iOS
+//
+//  Created by 刘旭 on 15/12/14.
+//  Copyright © 2015年 刘旭. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AppNavigationController.h"
+#import "PKResManagerKit.h"
+#import "Addtional/Addtional.h"
+#import "AppNavigator.h"
+#import "AFNetworking.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+
+/*
+ *屏幕宽度
+ */
+#define SCREEN_WIDTH ([[UIScreen mainScreen]bounds].size.width)
+
+/*
+ *屏幕高度
+ */
+#define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
+
+/*
+ *屏幕高度系数比例
+ */
+#define WIDTH ([[UIScreen mainScreen]bounds].size.width / 320)
+
+/*
+ *屏幕高度系数比例
+ */
+#define HEIGHT ([[UIScreen mainScreen]bounds].size.height / 568)
+
+/*
+ * iPhone statusbar 高度
+ */
+#define PHONE_STATUSBAR_HEIGHT 20
+
+/*
+ * iPhone 默认导航条高度
+ */
+#define PHONE_NAVIGATIONBAR_HEIGHT 44.0f
+#define PHONE_NAVIGATIONBAR_IOS7_HEIGHT 64.0f
+// tabBar高度
+#define PHONE_CUSTOM_TABBAR_HEIGHT 50.0f
+//color
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:1.0]
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define kAppBgCommonColor RGBCOLOR(231,231,231)
+#define kAppTextColor RGBCOLOR(0x59, 0x59, 0x59)
+
+
+#endif /* PrefixHeader_pch */
