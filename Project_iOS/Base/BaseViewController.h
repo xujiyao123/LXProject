@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UIViewController<PKResChangeStyleDelegate>
+@interface BaseViewController : UIViewController
 
 @property (nonatomic, strong) UIColor *navigationBarColor;
 

@@ -22,7 +22,7 @@
     return shareManager;
 }
 
-- (AppNavigationController *)tabbarViewController{
+- (AppTabBarViewController *)tabbarViewController{
     if (!_tabbarViewController) {
         _tabbarViewController = [[AppTabBarViewController alloc]init];
         _tabbarViewController.tabBar.selectedImageTintColor = RGBCOLOR(45, 215, 177);
@@ -58,7 +58,7 @@
         [items addObject:item];
         item.image = [[UIImage imageForKey:@"tab_user_normal"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         item.selectedImage = [UIImage imageForKey:@"tab_user"];
-        third.title = item.title = @"我的";
+        third.title = item.title = @"three";
         AppNavigationController *meNavi = [[AppNavigationController alloc]initWithRootViewController:third];
         meNavi.tabBarItem = item;
         [viewControllers addObject:meNavi];
