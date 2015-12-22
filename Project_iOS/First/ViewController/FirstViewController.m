@@ -7,16 +7,78 @@
 //
 
 #import "FirstViewController.h"
+#import "FirstViewCell.h"
+#import "DTouchViewController.h"
 
-@interface FirstViewController ()
+@interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
+
+@property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) NSArray *dataArray;
 
 @end
 
 @implementation FirstViewController
 
+- (id)init {
+    if (self = [super init]) {
+        self.dataArray = @[@"3d touch"];
+    }
+    return self;
+}
+
+- (void)loadView {
+    [super loadView];
+    [self.view addSubview:self.tableView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DTouchAction) name:@"DTouch" object:nil];
+}
+
+- (void)DTouchAction {
+    DTouchViewController *vc = [[DTouchViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (_dataArray.count) {
+        return _dataArray.count;
+    }
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_dataArray.count) {
+        return 50;
+    }
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FirstViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[FirstViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+    }
+    cell.detailTextLabel.text = _dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath.row) {
+        DTouchViewController *vc = [[DTouchViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

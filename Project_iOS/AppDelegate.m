@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppTabBarManager.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self createDtouchItem];
     [AppNavigator openMainViewController];
     return YES;
+}
+
+- (void)createDtouchItem {
+    UIApplicationShortcutIcon *firstIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome];
+    UIApplicationShortcutIcon *secondIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeFavorite];
+    UIApplicationShortcutIcon *thirdIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeLove];
+    
+    NSDictionary *firstInfo = @{@"url" : @"first"};
+    NSDictionary *secondInfo = @{@"url" : @"second"};
+    NSDictionary *thirdInfo = @{@"url" : @"third"};
+    
+    UIMutableApplicationShortcutItem *firstItem = [[UIMutableApplicationShortcutItem alloc]initWithType:@"first" localizedTitle:@"first" localizedSubtitle:@"3D Touch-Demo" icon:firstIcon userInfo:firstInfo];
+    UIMutableApplicationShortcutItem *secondItem = [[UIMutableApplicationShortcutItem alloc]initWithType:@"second" localizedTitle:@"second" localizedSubtitle:@"小标题" icon:secondIcon userInfo:secondInfo];
+    UIMutableApplicationShortcutItem *thirdItem = [[UIMutableApplicationShortcutItem alloc]initWithType:@"third" localizedTitle:@"third" localizedSubtitle:@"小标题" icon:thirdIcon userInfo:thirdInfo];
+    
+    NSArray *array = @[thirdItem, secondItem, firstItem];
+    [UIApplication sharedApplication].shortcutItems = array;
+    
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    if ([shortcutItem.type isEqualToString:@"first"]) {
+        [AppTabBarManager shareManager].tabbarViewController.selectedIndex = 0;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"DTouch" object:nil];
+        });
+    }
+    else if ([shortcutItem.type isEqualToString:@"second"]) {
+        [AppTabBarManager shareManager].tabbarViewController.selectedIndex = 1;
+    }
+    else if ([shortcutItem.type isEqualToString:@"third"]) {
+        [AppTabBarManager shareManager].tabbarViewController.selectedIndex = 2;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

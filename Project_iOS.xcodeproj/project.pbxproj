@@ -195,6 +195,10 @@
 		90C7F4161C200091003289EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4151C200091003289EA /* SystemConfiguration.framework */; };
 		90C7F4181C20009E003289EA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4171C20009E003289EA /* libsqlite3.tbd */; };
 		90C7F41A1C2000AF003289EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4191C2000AF003289EA /* libz.tbd */; };
+		90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7361C29503200271AAA /* BaseTableViewCell.m */; };
+		90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7391C29504A00271AAA /* FirstViewCell.m */; };
+		90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE73F1C2952B100271AAA /* DTouchViewController.m */; };
+		90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -569,6 +573,14 @@
 		90C7F4151C200091003289EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		90C7F4171C20009E003289EA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		90C7F4191C2000AF003289EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		90FAE7351C29503200271AAA /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		90FAE7361C29503200271AAA /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		90FAE7381C29504A00271AAA /* FirstViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCell.h; sourceTree = "<group>"; };
+		90FAE7391C29504A00271AAA /* FirstViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewCell.m; sourceTree = "<group>"; };
+		90FAE73E1C2952B100271AAA /* DTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchViewController.h; sourceTree = "<group>"; };
+		90FAE73F1C2952B100271AAA /* DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchViewController.m; sourceTree = "<group>"; };
+		90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchDetailViewController.h; sourceTree = "<group>"; };
+		90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -722,6 +734,8 @@
 			children = (
 				904678101C1E73F60026F096 /* BaseViewController.h */,
 				904678111C1E73F60026F096 /* BaseViewController.m */,
+				90FAE7351C29503200271AAA /* BaseTableViewCell.h */,
+				90FAE7361C29503200271AAA /* BaseTableViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -960,6 +974,8 @@
 		908E6C1A1C1EB3BF00CDD941 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90FAE7381C29504A00271AAA /* FirstViewCell.h */,
+				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -969,6 +985,10 @@
 			children = (
 				908E6C241C1EB3E000CDD941 /* FirstViewController.h */,
 				908E6C251C1EB3E000CDD941 /* FirstViewController.m */,
+				90FAE73E1C2952B100271AAA /* DTouchViewController.h */,
+				90FAE73F1C2952B100271AAA /* DTouchViewController.m */,
+				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
+				90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1486,6 +1506,7 @@
 				90C7F3BF1C1FFF66003289EA /* YYCGUtilities.m in Sources */,
 				90C7F3E21C1FFF66003289EA /* YYTextDebugOption.m in Sources */,
 				904678931C1E73F60026F096 /* CALayer+Add.m in Sources */,
+				90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */,
 				90C7F3D21C1FFF66003289EA /* _YYWebImageSetter.m in Sources */,
 				90C7F3CF1C1FFF66003289EA /* YYDiskCache.m in Sources */,
 				904678DD1C1E73F60026F096 /* UIView+WebCacheOperation.m in Sources */,
@@ -1532,12 +1553,14 @@
 				90C7F3F91C1FFF66003289EA /* YYKeychain.m in Sources */,
 				90C7F3B31C1FFF66003289EA /* NSDate+YYAdd.m in Sources */,
 				904678961C1E73F60026F096 /* NSDictionary+NSDictionaryExt.m in Sources */,
+				90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */,
 				908E6C291C1EB3EF00CDD941 /* SecondViewController.m in Sources */,
 				90C7F3BE1C1FFF66003289EA /* CALayer+YYAdd.m in Sources */,
 				90C7F3CA1C1FFF66003289EA /* UIScrollView+YYAdd.m in Sources */,
 				90C7F3F01C1FFF66003289EA /* YYTextRubyAnnotation.m in Sources */,
 				904678B81C1E73F60026F096 /* AFURLResponseSerialization.m in Sources */,
 				904678B71C1E73F60026F096 /* AFURLRequestSerialization.m in Sources */,
+				90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */,
 				904678C81C1E73F60026F096 /* TAAnimatedDotView.m in Sources */,
 				904678CB1C1E73F60026F096 /* SDCollectionViewCell.m in Sources */,
 				9046789B1C1E73F60026F096 /* SMS_HYZBadgeView.m in Sources */,
@@ -1545,6 +1568,7 @@
 				90C7F3E71C1FFF66003289EA /* YYTextLine.m in Sources */,
 				904678C41C1E73F60026F096 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				904678CE1C1E73F60026F096 /* MKAnnotationView+WebCache.m in Sources */,
+				90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */,
 				90C7F3FB1C1FFF66003289EA /* YYSentinel.m in Sources */,
 				90C7F3C81C1FFF66003289EA /* UIImage+YYAdd.m in Sources */,
 				9046789C1C1E73F60026F096 /* UIBarButtonItem+Image.m in Sources */,
