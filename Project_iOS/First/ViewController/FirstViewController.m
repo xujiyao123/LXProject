@@ -9,11 +9,13 @@
 #import "FirstViewController.h"
 #import "FirstViewCell.h"
 #import "DTouchViewController.h"
+#import "GuideView.h"
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSArray *dataArray;
+@property(nonatomic, strong) GuideView *guideView;
 
 @end
 
@@ -29,6 +31,9 @@
 - (void)loadView {
     [super loadView];
     [self.view addSubview:self.tableView];
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:@"firstOpen"]) {
+        [self.tabBarController.view addSubview:self.guideView];
+    }
 }
 
 - (void)viewDidLoad {
@@ -40,6 +45,13 @@
 - (void)DTouchAction {
     DTouchViewController *vc = [[DTouchViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (GuideView *)guideView {
+    if (!_guideView) {
+        _guideView = [[GuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    }
+    return _guideView;
 }
 
 - (UITableView *)tableView {

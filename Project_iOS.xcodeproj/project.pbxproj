@@ -199,6 +199,7 @@
 		90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7391C29504A00271AAA /* FirstViewCell.m */; };
 		90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE73F1C2952B100271AAA /* DTouchViewController.m */; };
 		90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */; };
+		90FAE7531C2A4AC300271AAA /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7521C2A4AC300271AAA /* GuideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -581,6 +582,8 @@
 		90FAE73F1C2952B100271AAA /* DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchViewController.m; sourceTree = "<group>"; };
 		90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchDetailViewController.h; sourceTree = "<group>"; };
 		90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchDetailViewController.m; sourceTree = "<group>"; };
+		90FAE7511C2A4AC300271AAA /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
+		90FAE7521C2A4AC300271AAA /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -732,6 +735,8 @@
 		9046780F1C1E73F60026F096 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				90FAE7511C2A4AC300271AAA /* GuideView.h */,
+				90FAE7521C2A4AC300271AAA /* GuideView.m */,
 				904678101C1E73F60026F096 /* BaseViewController.h */,
 				904678111C1E73F60026F096 /* BaseViewController.m */,
 				90FAE7351C29503200271AAA /* BaseTableViewCell.h */,
@@ -1542,6 +1547,7 @@
 				904678A41C1E73F60026F096 /* UINavigationBar+Image.m in Sources */,
 				90C7F3BC1C1FFF66003289EA /* NSThread+YYAdd.m in Sources */,
 				904678DB1C1E73F60026F096 /* UIImageView+HighlightedWebCache.m in Sources */,
+				90FAE7531C2A4AC300271AAA /* GuideView.m in Sources */,
 				904678991C1E73F60026F096 /* NSString+NSStringEx.m in Sources */,
 				90C7F3CD1C1FFF66003289EA /* UIView+YYAdd.m in Sources */,
 				904678B51C1E73F60026F096 /* AFSecurityPolicy.m in Sources */,
