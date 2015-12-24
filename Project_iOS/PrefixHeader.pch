@@ -45,15 +45,15 @@
 /*
  * iPhone statusbar 高度
  */
-#define PHONE_STATUSBAR_HEIGHT 20
+#define PHONE_STATUSBAR_HEIGHT          20
 
 /*
- * iPhone 默认导航条高度
+* iPhone默认导航条高度
  */
-#define PHONE_NAVIGATIONBAR_HEIGHT 44.0f
+#define PHONE_NAVIGATIONBAR_HEIGHT      44.0f
 #define PHONE_NAVIGATIONBAR_IOS7_HEIGHT 64.0f
 // tabBar高度
-#define PHONE_CUSTOM_TABBAR_HEIGHT 50.0f
+#define PHONE_CUSTOM_TABBAR_HEIGHT      50.0f
 //color
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -65,5 +65,7 @@ alpha:1.0]
 #define kAppBgCommonColor RGBCOLOR(231,231,231)
 #define kAppTextColor RGBCOLOR(0x59, 0x59, 0x59)
 
+#define MR_SHORTHAND
+#import "Masonry.h"
 
 #endif /* PrefixHeader_pch */

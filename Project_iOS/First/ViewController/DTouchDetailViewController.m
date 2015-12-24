@@ -14,9 +14,25 @@
 
 @implementation DTouchDetailViewController
 
+- (id)init {
+    if (self = [super init]) {
+        NSLog(@"1");
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"2");
     // Do any additional setup after loading the view.
+    UILabel *label = [UILabel new];
+    label.text = self.labelText;
+    label.textColor = kAppTextColor;
+    label.font = [UIFont lantingFontOfSize:40];
+    [self.view addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

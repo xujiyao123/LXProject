@@ -98,6 +98,9 @@
 		908E6C3C1C1EB52200CDD941 /* UIFont+PKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C341C1EB52200CDD941 /* UIFont+PKFont.m */; };
 		908E6C3D1C1EB52200CDD941 /* UIImage+PKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C361C1EB52200CDD941 /* UIImage+PKImage.m */; };
 		908E6C3E1C1EB52200CDD941 /* PKResManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C381C1EB52200CDD941 /* PKResManager.m */; };
+		90AAFD1D1C2C52B40091E422 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; };
+		90AAFD1E1C2C52B40091E422 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90AAFD221C2C57360091E422 /* DTouchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAFD211C2C57360091E422 /* DTouchViewCell.m */; };
 		90C7F2F81C1FF89C003289EA /* BaseRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2F71C1FF89C003289EA /* BaseRequset.m */; };
 		90C7F2FB1C1FF911003289EA /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2FA1C1FF911003289EA /* AppContext.m */; };
 		90C7F2FE1C1FFB6A003289EA /* extError.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2FD1C1FFB6A003289EA /* extError.m */; };
@@ -195,12 +198,29 @@
 		90C7F4161C200091003289EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4151C200091003289EA /* SystemConfiguration.framework */; };
 		90C7F4181C20009E003289EA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4171C20009E003289EA /* libsqlite3.tbd */; };
 		90C7F41A1C2000AF003289EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7F4191C2000AF003289EA /* libz.tbd */; };
+		90D1FB861C2B07CC0097CB1A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB851C2B07CC0097CB1A /* Person.m */; };
+		90D1FB891C2B07D70097CB1A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB881C2B07D70097CB1A /* Dog.m */; };
+		90D1FB8C1C2B0E1E0097CB1A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */; };
 		90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7361C29503200271AAA /* BaseTableViewCell.m */; };
 		90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7391C29504A00271AAA /* FirstViewCell.m */; };
 		90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE73F1C2952B100271AAA /* DTouchViewController.m */; };
 		90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */; };
 		90FAE7531C2A4AC300271AAA /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7521C2A4AC300271AAA /* GuideView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90AAFD1F1C2C52B40091E422 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90AAFD1E1C2C52B40091E422 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		904677C51C1E71420026F096 /* Project_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +411,9 @@
 		908E6C371C1EB52200CDD941 /* PKResManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKResManager.h; sourceTree = "<group>"; };
 		908E6C381C1EB52200CDD941 /* PKResManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKResManager.m; sourceTree = "<group>"; };
 		908E6C391C1EB52200CDD941 /* PKResManagerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKResManagerKit.h; sourceTree = "<group>"; };
+		90AAFD1C1C2C52B40091E422 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		90AAFD201C2C57360091E422 /* DTouchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchViewCell.h; sourceTree = "<group>"; };
+		90AAFD211C2C57360091E422 /* DTouchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchViewCell.m; sourceTree = "<group>"; };
 		90C7F2F61C1FF89C003289EA /* BaseRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequset.h; sourceTree = "<group>"; };
 		90C7F2F71C1FF89C003289EA /* BaseRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequset.m; sourceTree = "<group>"; };
 		90C7F2F91C1FF911003289EA /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
@@ -574,6 +597,12 @@
 		90C7F4151C200091003289EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		90C7F4171C20009E003289EA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		90C7F4191C2000AF003289EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		90D1FB841C2B07CC0097CB1A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		90D1FB851C2B07CC0097CB1A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		90D1FB871C2B07D70097CB1A /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		90D1FB881C2B07D70097CB1A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
+		90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
 		90FAE7351C29503200271AAA /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		90FAE7361C29503200271AAA /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		90FAE7381C29504A00271AAA /* FirstViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCell.h; sourceTree = "<group>"; };
@@ -595,6 +624,7 @@
 				90C7F4181C20009E003289EA /* libsqlite3.tbd in Frameworks */,
 				90C7F4161C200091003289EA /* SystemConfiguration.framework in Frameworks */,
 				90C7F4141C20007A003289EA /* MobileCoreServices.framework in Frameworks */,
+				90AAFD1D1C2C52B40091E422 /* Realm.framework in Frameworks */,
 				90C7F4121C200072003289EA /* Accelerate.framework in Frameworks */,
 				90C7F4101C20006B003289EA /* AssetsLibrary.framework in Frameworks */,
 				90C7F40E1C200066003289EA /* ImageIO.framework in Frameworks */,
@@ -613,6 +643,7 @@
 		904677BC1C1E71410026F096 = {
 			isa = PBXGroup;
 			children = (
+				90AAFD1C1C2C52B40091E422 /* Realm.framework */,
 				90C7F4191C2000AF003289EA /* libz.tbd */,
 				90C7F4171C20009E003289EA /* libsqlite3.tbd */,
 				90C7F4151C200091003289EA /* SystemConfiguration.framework */,
@@ -972,6 +1003,10 @@
 		908E6C191C1EB3BF00CDD941 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				90D1FB841C2B07CC0097CB1A /* Person.h */,
+				90D1FB851C2B07CC0097CB1A /* Person.m */,
+				90D1FB871C2B07D70097CB1A /* Dog.h */,
+				90D1FB881C2B07D70097CB1A /* Dog.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -981,6 +1016,8 @@
 			children = (
 				90FAE7381C29504A00271AAA /* FirstViewCell.h */,
 				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
+				90AAFD201C2C57360091E422 /* DTouchViewCell.h */,
+				90AAFD211C2C57360091E422 /* DTouchViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -994,6 +1031,8 @@
 				90FAE73F1C2952B100271AAA /* DTouchViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
 				90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */,
+				90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */,
+				90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1367,6 +1406,8 @@
 				904677C11C1E71420026F096 /* Sources */,
 				904677C21C1E71420026F096 /* Frameworks */,
 				904677C31C1E71420026F096 /* Resources */,
+				909C5A5E1C2AFF6100F1C6B1 /* ShellScript */,
+				90AAFD1F1C2C52B40091E422 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1425,6 +1466,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		909C5A5E1C2AFF6100F1C6B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		904677C11C1E71420026F096 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1467,6 +1524,7 @@
 				90C7F3F41C1FFF66003289EA /* YYTextView.m in Sources */,
 				90C7F3D91C1FFF66003289EA /* YYImage.m in Sources */,
 				90C7F3B21C1FFF66003289EA /* NSData+YYAdd.m in Sources */,
+				90D1FB861C2B07CC0097CB1A /* Person.m in Sources */,
 				90C7F3D61C1FFF66003289EA /* UIImageView+YYWebImage.m in Sources */,
 				90C7F2FE1C1FFB6A003289EA /* extError.m in Sources */,
 				90C7F3ED1C1FFF66003289EA /* YYTextArchiver.m in Sources */,
@@ -1540,6 +1598,7 @@
 				904678C61C1E73F60026F096 /* ViewController+MASAdditions.m in Sources */,
 				904678E01C1E73F60026F096 /* NSDictionary_JSONExtensions.m in Sources */,
 				904678AA1C1E73F60026F096 /* AppNavigator.m in Sources */,
+				90AAFD221C2C57360091E422 /* DTouchViewCell.m in Sources */,
 				90C7F3FD1C1FFF66003289EA /* YYThreadSafeDictionary.m in Sources */,
 				90C7F3DB1C1FFF66003289EA /* YYImageCoder.m in Sources */,
 				904677D61C1E71420026F096 /* Project_iOS.xcdatamodeld in Sources */,
@@ -1568,6 +1627,7 @@
 				904678B71C1E73F60026F096 /* AFURLRequestSerialization.m in Sources */,
 				90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */,
 				904678C81C1E73F60026F096 /* TAAnimatedDotView.m in Sources */,
+				90D1FB8C1C2B0E1E0097CB1A /* RealmViewController.m in Sources */,
 				904678CB1C1E73F60026F096 /* SDCollectionViewCell.m in Sources */,
 				9046789B1C1E73F60026F096 /* SMS_HYZBadgeView.m in Sources */,
 				904678941C1E73F60026F096 /* NSBundle+Scale.m in Sources */,
@@ -1583,6 +1643,7 @@
 				90C7F3C11C1FFF66003289EA /* UIBarButtonItem+YYAdd.m in Sources */,
 				90C7F3F11C1FFF66003289EA /* YYTextRunDelegate.m in Sources */,
 				904678D31C1E73F60026F096 /* SDWebImageDownloader.m in Sources */,
+				90D1FB891C2B07D70097CB1A /* Dog.m in Sources */,
 				904678D91C1E73F60026F096 /* UIImage+MultiFormat.m in Sources */,
 				90C7F3B61C1FFF66003289EA /* NSNotificationCenter+YYAdd.m in Sources */,
 				904678BF1C1E73F60026F096 /* MASConstraintMaker.m in Sources */,
@@ -1707,9 +1768,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Project_iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = Project_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liuxu.com.Project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1720,9 +1785,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Project_iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = Project_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liuxu.com.Project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

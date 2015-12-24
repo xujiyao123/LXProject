@@ -10,4 +10,6 @@
 
 @interface DTouchDetailViewController : BaseViewController
 
+@property (nonatomic, strong) NSString *labelText;
+
 @end
