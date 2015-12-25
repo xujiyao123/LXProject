@@ -10,13 +10,21 @@
 #import "DTouchDetailViewController.h"
 #import "DTouchViewCell.h"
 
-@interface DTouchViewController ()<UIViewControllerPreviewingDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface DTouchViewController ()<UIViewControllerPreviewingDelegate, UITableViewDataSource, UITableViewDelegate, DTouchDetailViewControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
 @implementation DTouchViewController
+
+- (id)init {
+    if (self = [super init]) {
+        _dataArray = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", nil];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,7 +49,7 @@
 
 #pragma mark - tableView dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return _dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,6 +58,7 @@
         cell = [[DTouchViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
         [self registerForPreviewingWithDelegate:self sourceView:cell];
     }
+    cell.label.text = _dataArray[indexPath.row];
     cell.count = indexPath.row;
     return cell;
 }
@@ -67,14 +76,25 @@
     }
     else {
         DTouchDetailViewController *vc = [[DTouchDetailViewController alloc] init];
+        vc.delegate = self;
+        vc.preferredContentSize = CGSizeMake(0, 500);
+//        previewingContext.sourceRect = previewingContext.sourceView.frame;
         DTouchViewCell *cell = (DTouchViewCell *)[previewingContext sourceView];
-        vc.labelText = [NSString stringWithFormat:@"%ld", cell.count];
+        vc.labelText = cell.label.text;
+        vc.count = cell.count;
         return vc;
     }
 }
 
 - (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
     [self showViewController:viewControllerToCommit sender:self];
+}
+
+- (void)returnResult:(NSInteger)count {
+    [self.dataArray insertObject:_dataArray[count] atIndex:0];
+    [self.dataArray removeObjectAtIndex:count + 1];
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning {

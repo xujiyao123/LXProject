@@ -8,8 +8,18 @@
 
 #import "BaseViewController.h"
 
+@protocol DTouchDetailViewControllerDelegate <NSObject>
+
+- (void)returnResult:(NSInteger)count;
+
+@end
+
+
 @interface DTouchDetailViewController : BaseViewController
 
 @property (nonatomic, strong) NSString *labelText;
+@property (nonatomic, assign) NSInteger count;
+
+@property (nonatomic, weak) id<DTouchDetailViewControllerDelegate> delegate;
 
 @end

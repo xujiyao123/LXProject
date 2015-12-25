@@ -12,11 +12,17 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        UIImageView *imageView = [UIImageView new];
-        imageView.image = [UIImage imageForKey:@"placeholder"];
-        [self.contentView addSubview:imageView];
-        [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.contentView);
+        
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        self.label = [UILabel new];
+        self.label.textColor = [UIColor blackColor];
+        self.label.font = [UIFont lantingFontOfSize:30];
+        self.label.textAlignment = NSTextAlignmentCenter;
+        [self.contentView addSubview:self.label];
+        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.contentView);
+            
         }];
     }
     return self;

@@ -11,5 +11,6 @@
 @interface DTouchViewCell : BaseTableViewCell
 
 @property (nonatomic, assign) NSInteger count;
+@property (nonatomic, strong) UILabel *label;
 
 @end
