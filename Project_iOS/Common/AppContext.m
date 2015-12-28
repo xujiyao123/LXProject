@@ -20,6 +20,19 @@ static AppContext *_center = nil;
     return _center;
 }
 
+- (FirstRequset *)firstRequset {
+    if (!_firstRequset) {
+        _firstRequset = [[FirstRequset alloc]init];
+    }
+    return _firstRequset;
+}
 
+- (void)userLogout {
+    
+}
+
+- (void)userLogin {
+    
+}
 
 @end

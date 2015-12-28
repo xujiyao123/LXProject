@@ -13,13 +13,10 @@ typedef void(^RSRequstComplete)(NSInteger errorNum, NSDictionary *info, extError
 
 @interface BaseRequset : NSObject
 
+- (void)sendRequestWithMethod:(NSString *)method
+                      WithUrl:(NSString *)url
+             WithRequestParam:(NSDictionary *)requestParam
+                 WithComplete:(RSRequstComplete)complete;
 
-- (void)sendPostRequestWithMethod:(NSString *)method
-                     requestParam:(NSDictionary *)requestParam
-                       onComplete:(RSRequstComplete)requestComplete;
-
-- (void)sendGetRequestWithMethod:(NSString *)method
-                    requestParam:(NSDictionary *)requestParam
-                      onComplete:(RSRequstComplete)requestComplete;
 
 @end

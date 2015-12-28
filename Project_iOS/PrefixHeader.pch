@@ -22,6 +22,10 @@
 #import "UIImageView+WebCache.h"
 #import "YYKit.h"
 #import "Masonry.h"
+#import "DDLog.h"
+#import "BaseRequset.h"
+
+#define BaseUrl @"http://182.92.241.171/"
 
 /*
  *屏幕宽度

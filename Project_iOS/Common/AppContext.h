@@ -9,8 +9,11 @@
 #define APPCONTEXT [AppContext shareInstance]
 
 #import <Foundation/Foundation.h>
+#import "FirstRequset.h"
 
 @interface AppContext : NSObject
+
+@property (nonatomic, strong) FirstRequset *firstRequset;
 
 + (AppContext *)shareInstance;
 
