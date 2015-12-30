@@ -10,6 +10,7 @@
 #import "FirstViewCell.h"
 #import "DTouchViewController.h"
 #import "GuideView.h"
+#import "CellAutoLayoutViewController.h"
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -23,7 +24,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch"];
+        self.dataArray = @[@"3d touch", @"cell自适应"];
     }
     return self;
 }
@@ -90,10 +91,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!indexPath.row) {
-        DTouchViewController *vc = [[DTouchViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc = [[UIViewController alloc]init];
+    switch (indexPath.row) {
+        case 0:
+            vc = [[DTouchViewController alloc]init];
+            break;
+        case 1:
+            vc = [[CellAutoLayoutViewController alloc]init];
+            break;
+        default:
+            break;
     }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

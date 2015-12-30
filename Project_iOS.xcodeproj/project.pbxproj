@@ -93,6 +93,11 @@
 		90AAFD1D1C2C52B40091E422 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; };
 		90AAFD1E1C2C52B40091E422 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90AAFD221C2C57360091E422 /* DTouchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAFD211C2C57360091E422 /* DTouchViewCell.m */; };
+		90B2A42A1C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2A4271C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		90B2A42B1C34278A00739018 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2A4291C34278A00739018 /* UIView+SDAutoLayout.m */; };
+		90B2A42E1C3427CE00739018 /* CellAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2A42D1C3427CE00739018 /* CellAutoLayoutViewController.m */; };
+		90B2A4311C34291200739018 /* CellAutoLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2A4301C34291200739018 /* CellAutoLayoutCell.m */; };
+		90B2A4341C3429C900739018 /* AutoLayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B2A4331C3429C900739018 /* AutoLayoutModel.m */; };
 		90C7F2F81C1FF89C003289EA /* BaseRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2F71C1FF89C003289EA /* BaseRequset.m */; };
 		90C7F2FB1C1FF911003289EA /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2FA1C1FF911003289EA /* AppContext.m */; };
 		90C7F2FE1C1FFB6A003289EA /* extError.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7F2FD1C1FFB6A003289EA /* extError.m */; };
@@ -307,6 +312,16 @@
 		90AAFD1C1C2C52B40091E422 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		90AAFD201C2C57360091E422 /* DTouchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchViewCell.h; sourceTree = "<group>"; };
 		90AAFD211C2C57360091E422 /* DTouchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchViewCell.m; sourceTree = "<group>"; };
+		90B2A4261C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		90B2A4271C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		90B2A4281C34278A00739018 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		90B2A4291C34278A00739018 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		90B2A42C1C3427CE00739018 /* CellAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellAutoLayoutViewController.h; sourceTree = "<group>"; };
+		90B2A42D1C3427CE00739018 /* CellAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAutoLayoutViewController.m; sourceTree = "<group>"; };
+		90B2A42F1C34291200739018 /* CellAutoLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellAutoLayoutCell.h; sourceTree = "<group>"; };
+		90B2A4301C34291200739018 /* CellAutoLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAutoLayoutCell.m; sourceTree = "<group>"; };
+		90B2A4321C3429C900739018 /* AutoLayoutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutModel.h; sourceTree = "<group>"; };
+		90B2A4331C3429C900739018 /* AutoLayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutModel.m; sourceTree = "<group>"; };
 		90C7F2F61C1FF89C003289EA /* BaseRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequset.h; sourceTree = "<group>"; };
 		90C7F2F71C1FF89C003289EA /* BaseRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequset.m; sourceTree = "<group>"; };
 		90C7F2F91C1FF911003289EA /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
@@ -577,6 +592,7 @@
 		904678231C1E73F60026F096 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				90B2A4251C34278A00739018 /* SDAutoLayout */,
 				9087B5341C31315A005346C4 /* Lumberjack */,
 				904678381C1E73F60026F096 /* GTM */,
 				904678591C1E73F60026F096 /* SDCycleScrollView */,
@@ -743,6 +759,8 @@
 				90D1FB851C2B07CC0097CB1A /* Person.m */,
 				90D1FB871C2B07D70097CB1A /* Dog.h */,
 				90D1FB881C2B07D70097CB1A /* Dog.m */,
+				90B2A4321C3429C900739018 /* AutoLayoutModel.h */,
+				90B2A4331C3429C900739018 /* AutoLayoutModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -754,6 +772,8 @@
 				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
 				90AAFD201C2C57360091E422 /* DTouchViewCell.h */,
 				90AAFD211C2C57360091E422 /* DTouchViewCell.m */,
+				90B2A42F1C34291200739018 /* CellAutoLayoutCell.h */,
+				90B2A4301C34291200739018 /* CellAutoLayoutCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -765,6 +785,8 @@
 				908E6C251C1EB3E000CDD941 /* FirstViewController.m */,
 				90FAE73E1C2952B100271AAA /* DTouchViewController.h */,
 				90FAE73F1C2952B100271AAA /* DTouchViewController.m */,
+				90B2A42C1C3427CE00739018 /* CellAutoLayoutViewController.h */,
+				90B2A42D1C3427CE00739018 /* CellAutoLayoutViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
 				90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */,
 				90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */,
@@ -863,6 +885,17 @@
 				908E6C361C1EB52200CDD941 /* UIImage+PKImage.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		90B2A4251C34278A00739018 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90B2A4261C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.h */,
+				90B2A4271C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m */,
+				90B2A4281C34278A00739018 /* UIView+SDAutoLayout.h */,
+				90B2A4291C34278A00739018 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1038,9 +1071,12 @@
 				90C7F2FB1C1FF911003289EA /* AppContext.m in Sources */,
 				904678971C1E73F60026F096 /* NSKeyedUnarchiver+ExceptionCatch.m in Sources */,
 				9087B5551C31315A005346C4 /* DDDispatchQueueLogFormatter.m in Sources */,
+				90B2A42A1C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				9087B54F1C31315A005346C4 /* DDASLLogCapture.m in Sources */,
+				90B2A42B1C34278A00739018 /* UIView+SDAutoLayout.m in Sources */,
 				908E6C3B1C1EB52200CDD941 /* UIColor+PKColor.m in Sources */,
 				90C7F2F81C1FF89C003289EA /* BaseRequset.m in Sources */,
+				90B2A42E1C3427CE00739018 /* CellAutoLayoutViewController.m in Sources */,
 				904678A81C1E73F60026F096 /* BaseViewController.m in Sources */,
 				904677D01C1E71420026F096 /* ViewController.m in Sources */,
 				904678CC1C1E73F60026F096 /* SDCycleScrollView.m in Sources */,
@@ -1084,10 +1120,12 @@
 				904678BA1C1E73F60026F096 /* GTMBase64.m in Sources */,
 				908E6C171C1EB18100CDD941 /* AppTabBarViewController.m in Sources */,
 				904678D31C1E73F60026F096 /* SDWebImageDownloader.m in Sources */,
+				90B2A4311C34291200739018 /* CellAutoLayoutCell.m in Sources */,
 				90D1FB891C2B07D70097CB1A /* Dog.m in Sources */,
 				904678D91C1E73F60026F096 /* UIImage+MultiFormat.m in Sources */,
 				904678D21C1E73F60026F096 /* SDWebImageDecoder.m in Sources */,
 				904677CD1C1E71420026F096 /* AppDelegate.m in Sources */,
+				90B2A4341C3429C900739018 /* AutoLayoutModel.m in Sources */,
 				904677CA1C1E71420026F096 /* main.m in Sources */,
 				9087B5561C31315A005346C4 /* DDMultiFormatter.m in Sources */,
 				9087B5541C31315A005346C4 /* DDContextFilterLogFormatter.m in Sources */,
