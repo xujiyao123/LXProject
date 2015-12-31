@@ -11,6 +11,8 @@
 #import "DTouchViewController.h"
 #import "GuideView.h"
 #import "CellAutoLayoutViewController.h"
+#import "MultiThreadViewController.h"
+#import "RunloopViewController.h"
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -24,7 +26,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop"];
     }
     return self;
 }
@@ -98,6 +100,12 @@
             break;
         case 1:
             vc = [[CellAutoLayoutViewController alloc]init];
+            break;
+        case 2:
+            vc = [[MultiThreadViewController alloc]init];
+            break;
+        case 3:
+            vc = [[RunloopViewController alloc]init];
             break;
         default:
             break;

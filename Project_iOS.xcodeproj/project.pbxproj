@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* MultiThreadViewController.m */; };
+		90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* RunloopViewController.m */; };
 		904677CA1C1E71420026F096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677C91C1E71420026F096 /* main.m */; };
 		904677CD1C1E71420026F096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CC1C1E71420026F096 /* AppDelegate.m */; };
 		904677D01C1E71420026F096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CF1C1E71420026F096 /* ViewController.m */; };
@@ -142,6 +144,10 @@
 /* Begin PBXFileReference section */
 		78FB942FDA4542A9264B7E9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8F59611FA324A4629878FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		90121CEC1C34E1E400D4075D /* MultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
+		90121CED1C34E1E400D4075D /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
+		90121CEF1C35153E00D4075D /* RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		90121CF01C35153E00D4075D /* RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		904677C51C1E71420026F096 /* Project_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904677C91C1E71420026F096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		904677CB1C1E71420026F096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -787,6 +793,10 @@
 				90FAE73F1C2952B100271AAA /* DTouchViewController.m */,
 				90B2A42C1C3427CE00739018 /* CellAutoLayoutViewController.h */,
 				90B2A42D1C3427CE00739018 /* CellAutoLayoutViewController.m */,
+				90121CEC1C34E1E400D4075D /* MultiThreadViewController.h */,
+				90121CED1C34E1E400D4075D /* MultiThreadViewController.m */,
+				90121CEF1C35153E00D4075D /* RunloopViewController.h */,
+				90121CF01C35153E00D4075D /* RunloopViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
 				90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */,
 				90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */,
@@ -1069,6 +1079,7 @@
 				904678A21C1E73F60026F096 /* UIFont+Ext.m in Sources */,
 				904678CA1C1E73F60026F096 /* TAPageControl.m in Sources */,
 				90C7F2FB1C1FF911003289EA /* AppContext.m in Sources */,
+				90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */,
 				904678971C1E73F60026F096 /* NSKeyedUnarchiver+ExceptionCatch.m in Sources */,
 				9087B5551C31315A005346C4 /* DDDispatchQueueLogFormatter.m in Sources */,
 				90B2A42A1C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
@@ -1128,6 +1139,7 @@
 				90B2A4341C3429C900739018 /* AutoLayoutModel.m in Sources */,
 				904677CA1C1E71420026F096 /* main.m in Sources */,
 				9087B5561C31315A005346C4 /* DDMultiFormatter.m in Sources */,
+				90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */,
 				9087B5541C31315A005346C4 /* DDContextFilterLogFormatter.m in Sources */,
 				904678D81C1E73F60026F096 /* UIImage+GIF.m in Sources */,
 				904678951C1E73F60026F096 /* NSDate+NSDateExt.m in Sources */,

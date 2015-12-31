@@ -65,13 +65,17 @@
     _contentLabel.text = _model.content;
     _contentLabel.textColor = kAppTextColor;
     _contentLabel.font = [UIFont systemFontOfSize:12];
-    _contentLabel.numberOfLines = 0;
+//    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc]initWithString:_contentLabel.text];
+//    NSMutableParagraphStyle *para = [[NSMutableParagraphStyle alloc]init];
+//    [para setLineSpacing:10];
+//    [attributeString addAttribute:NSParagraphStyleAttributeName value:para range:NSMakeRange(0, _contentLabel.text.length)];
+//    _contentLabel.numberOfLines = 0;
+//    _contentLabel.attributedText = attributeString;
     _contentLabel.sd_layout
     .autoHeightRatio(0)
     .topSpaceToView(self.titleLabel, 10)
     .leftSpaceToView(self.contentView, 10)
     .rightSpaceToView(self.contentView, 10);
-//    [_contentLabel setSigleLineAutoResizeWithMaxWidth:SCREEN_WIDTH - 20];
     
     [self setupAutoHeightWithBottomView:_contentLabel bottomMargin:0];
 }
