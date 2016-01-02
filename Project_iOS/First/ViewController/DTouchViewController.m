@@ -12,7 +12,7 @@
 
 @interface DTouchViewController ()<UIViewControllerPreviewingDelegate, UITableViewDataSource, UITableViewDelegate, DTouchDetailViewControllerDelegate>
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView    *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
@@ -76,12 +76,12 @@
     }
     else {
         DTouchDetailViewController *vc = [[DTouchDetailViewController alloc] init];
-        vc.delegate = self;
-        vc.preferredContentSize = CGSizeMake(0, 500);
+        vc.delegate                    = self;
+        vc.preferredContentSize        = CGSizeMake(0, 500);
 //        previewingContext.sourceRect = previewingContext.sourceView.frame;
-        DTouchViewCell *cell = (DTouchViewCell *)[previewingContext sourceView];
-        vc.labelText = cell.label.text;
-        vc.count = cell.count;
+        DTouchViewCell *cell           = (DTouchViewCell *)[previewingContext sourceView];
+        vc.labelText                   = cell.label.text;
+        vc.count                       = cell.count;
         return vc;
     }
 }

@@ -15,9 +15,9 @@
         
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        self.label = [UILabel new];
-        self.label.textColor = [UIColor blackColor];
-        self.label.font = [UIFont lantingFontOfSize:30];
+        self.label               = [UILabel new];
+        self.label.textColor     = [UIColor blackColor];
+        self.label.font          = [UIFont lantingFontOfSize:30];
         self.label.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:self.label];
         [self.label mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -53,18 +53,18 @@
     .rightEqualToView(self.contentView)
     .bottomEqualToView(self.contentView);
     
-    _titleLabel.text = _model.title;
+    _titleLabel.text      = _model.title;
     _titleLabel.textColor = kAppTextColor;
-    _titleLabel.font = [UIFont systemFontOfSize:12];
+    _titleLabel.font      = [UIFont systemFontOfSize:12];
     _titleLabel.sd_layout
     .topSpaceToView(self.contentView, 20)
     .leftSpaceToView(self.contentView, 10)
     .heightIs(12);
     [_titleLabel setSigleLineAutoResizeWithMaxWidth:200];
     
-    _contentLabel.text = _model.content;
+    _contentLabel.text      = _model.content;
     _contentLabel.textColor = kAppTextColor;
-    _contentLabel.font = [UIFont systemFontOfSize:12];
+    _contentLabel.font      = [UIFont systemFontOfSize:12];
 //    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc]initWithString:_contentLabel.text];
 //    NSMutableParagraphStyle *para = [[NSMutableParagraphStyle alloc]init];
 //    [para setLineSpacing:10];

@@ -18,9 +18,9 @@
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
 
-@property(nonatomic, strong) UITableView *tableView;
-@property(nonatomic, strong) NSArray *dataArray;
-@property(nonatomic, strong) GuideView *guideView;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray     *dataArray;
+@property (nonatomic, strong) GuideView   *guideView;
 
 @end
 

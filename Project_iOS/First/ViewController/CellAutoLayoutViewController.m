@@ -48,12 +48,12 @@
                             @"31231313213131231",
                             @"312312312312312313123121231231"];
     for (int i = 0; i < namesArray.count; i++) {
-        int iconRandomIndex = arc4random_uniform(5);
+        int iconRandomIndex    = arc4random_uniform(5);
         int contentRandomIndex = arc4random_uniform(5);
-        
+
         AutoLayoutModel *model = [[AutoLayoutModel alloc]init];
-        model.title = namesArray[iconRandomIndex];
-        model.content = textArray[contentRandomIndex];
+        model.title            = namesArray[iconRandomIndex];
+        model.content          = textArray[contentRandomIndex];
         [self.dataArray addObject:model];
     }
     [self.view addSubview:self.tableView];
@@ -61,11 +61,11 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_NAVIGATIONBAR_IOS7_HEIGHT)];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
+        _tableView                 = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_NAVIGATIONBAR_IOS7_HEIGHT)];
+        _tableView.delegate        = self;
+        _tableView.dataSource      = self;
         _tableView.backgroundColor = [UIColor clearColor];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }

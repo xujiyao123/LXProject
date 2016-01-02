@@ -25,10 +25,10 @@
     [super viewDidLoad];
     NSLog(@"2");
     // Do any additional setup after loading the view.
-    UILabel *label = [UILabel new];
-    label.text = self.labelText;
+    UILabel *label  = [UILabel new];
+    label.text      = self.labelText;
     label.textColor = kAppTextColor;
-    label.font = [UIFont lantingFontOfSize:40];
+    label.font      = [UIFont lantingFontOfSize:40];
     [self.view addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
