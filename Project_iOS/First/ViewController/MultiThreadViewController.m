@@ -31,6 +31,15 @@
     });
 
 
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //子线程中开始网络请求数据
+        //更新数据模型
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            //在主线程中更新UI代码
+            
+        });
+        
+    });
 }
 
 - (void)didReceiveMemoryWarning {
