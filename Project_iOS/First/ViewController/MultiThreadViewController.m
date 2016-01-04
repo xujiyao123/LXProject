@@ -40,8 +40,22 @@
         });
         
     });
+    
+    //串行队列
+    dispatch_queue_t queue1 = dispatch_queue_create("dispatch.writedb", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //延时操作
+    });
+    
 }
 
+- (void)writeToDB:(NSData *)data {
+    dispatch_queue_t queue1 = dispatch_queue_create("dispatch.writedb", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue1, ^{
+        
+    });
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
