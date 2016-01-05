@@ -119,6 +119,11 @@
 		90D1FB861C2B07CC0097CB1A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB851C2B07CC0097CB1A /* Person.m */; };
 		90D1FB891C2B07D70097CB1A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB881C2B07D70097CB1A /* Dog.m */; };
 		90D1FB8C1C2B0E1E0097CB1A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */; };
+		90E3D60D1C3BB4B5006F8554 /* PictureUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */; };
+		90E3D6131C3BB556006F8554 /* AGSimpleImageEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D6101C3BB556006F8554 /* AGSimpleImageEditorView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90E3D6141C3BB556006F8554 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 90E3D6111C3BB556006F8554 /* LICENSE */; };
+		90E3D6151C3BB556006F8554 /* transparencyPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E3D6121C3BB556006F8554 /* transparencyPattern.png */; };
+		90E3D6181C3BB8A1006F8554 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */; };
 		90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7361C29503200271AAA /* BaseTableViewCell.m */; };
 		90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7391C29504A00271AAA /* FirstViewCell.m */; };
 		90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE73F1C2952B100271AAA /* DTouchViewController.m */; };
@@ -353,6 +358,14 @@
 		90D1FB881C2B07D70097CB1A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
+		90E3D60B1C3BB4B5006F8554 /* PictureUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureUploadViewController.h; sourceTree = "<group>"; };
+		90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureUploadViewController.m; sourceTree = "<group>"; };
+		90E3D60F1C3BB556006F8554 /* AGSimpleImageEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSimpleImageEditorView.h; sourceTree = "<group>"; };
+		90E3D6101C3BB556006F8554 /* AGSimpleImageEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSimpleImageEditorView.m; sourceTree = "<group>"; };
+		90E3D6111C3BB556006F8554 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		90E3D6121C3BB556006F8554 /* transparencyPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparencyPattern.png; sourceTree = "<group>"; };
+		90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
 		90FAE7351C29503200271AAA /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		90FAE7361C29503200271AAA /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		90FAE7381C29504A00271AAA /* FirstViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCell.h; sourceTree = "<group>"; };
@@ -774,6 +787,7 @@
 		908E6C1A1C1EB3BF00CDD941 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90E3D60E1C3BB556006F8554 /* AGSimpleImageEditorView */,
 				90FAE7381C29504A00271AAA /* FirstViewCell.h */,
 				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
 				90AAFD201C2C57360091E422 /* DTouchViewCell.h */,
@@ -797,6 +811,10 @@
 				90121CED1C34E1E400D4075D /* MultiThreadViewController.m */,
 				90121CEF1C35153E00D4075D /* RunloopViewController.h */,
 				90121CF01C35153E00D4075D /* RunloopViewController.m */,
+				90E3D60B1C3BB4B5006F8554 /* PictureUploadViewController.h */,
+				90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */,
+				90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */,
+				90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
 				90FAE7421C2959B100271AAA /* DTouchDetailViewController.m */,
 				90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */,
@@ -908,6 +926,17 @@
 			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
+		90E3D60E1C3BB556006F8554 /* AGSimpleImageEditorView */ = {
+			isa = PBXGroup;
+			children = (
+				90E3D60F1C3BB556006F8554 /* AGSimpleImageEditorView.h */,
+				90E3D6101C3BB556006F8554 /* AGSimpleImageEditorView.m */,
+				90E3D6111C3BB556006F8554 /* LICENSE */,
+				90E3D6121C3BB556006F8554 /* transparencyPattern.png */,
+			);
+			path = AGSimpleImageEditorView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -972,7 +1001,9 @@
 			files = (
 				904678B01C1E73F60026F096 /* skin_default.bundle in Resources */,
 				904678AF1C1E73F60026F096 /* resource_common.bundle in Resources */,
+				90E3D6151C3BB556006F8554 /* transparencyPattern.png in Resources */,
 				904677D81C1E71420026F096 /* Assets.xcassets in Resources */,
+				90E3D6141C3BB556006F8554 /* LICENSE in Resources */,
 				904678AE1C1E73F60026F096 /* lt.ttf in Resources */,
 				9087B5571C31315A005346C4 /* README.txt in Resources */,
 				904677D31C1E71420026F096 /* Main.storyboard in Resources */,
@@ -1052,11 +1083,13 @@
 				908E6C3A1C1EB52200CDD941 /* PKAnimation+PKType.m in Sources */,
 				904678A61C1E73F60026F096 /* UIView+Additions.m in Sources */,
 				908E6C3E1C1EB52200CDD941 /* PKResManager.m in Sources */,
+				90E3D60D1C3BB4B5006F8554 /* PictureUploadViewController.m in Sources */,
 				904678CF1C1E73F60026F096 /* NSData+ImageContentType.m in Sources */,
 				904678A71C1E73F60026F096 /* UIWindow+RscExt.m in Sources */,
 				904678D01C1E73F60026F096 /* SDImageCache.m in Sources */,
 				9046789A1C1E73F60026F096 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				904678CD1C1E73F60026F096 /* UIView+SDExtension.m in Sources */,
+				90E3D6131C3BB556006F8554 /* AGSimpleImageEditorView.m in Sources */,
 				904678DF1C1E73F60026F096 /* CJSONSerializer.m in Sources */,
 				904678DC1C1E73F60026F096 /* UIImageView+WebCache.m in Sources */,
 				904678C71C1E73F60026F096 /* TAAbstractDotView.m in Sources */,
@@ -1140,6 +1173,7 @@
 				904677CA1C1E71420026F096 /* main.m in Sources */,
 				9087B5561C31315A005346C4 /* DDMultiFormatter.m in Sources */,
 				90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */,
+				90E3D6181C3BB8A1006F8554 /* CaptureViewController.m in Sources */,
 				9087B5541C31315A005346C4 /* DDContextFilterLogFormatter.m in Sources */,
 				904678D81C1E73F60026F096 /* UIImage+GIF.m in Sources */,
 				904678951C1E73F60026F096 /* NSDate+NSDateExt.m in Sources */,

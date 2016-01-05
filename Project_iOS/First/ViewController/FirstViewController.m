@@ -15,6 +15,7 @@
 #import "CellAutoLayoutViewController.h"
 #import "MultiThreadViewController.h"
 #import "RunloopViewController.h"
+#import "PictureUploadViewController.h"
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -28,7 +29,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"图片上传"];
     }
     return self;
 }
@@ -109,6 +110,8 @@
         case 3:
             vc = [[RunloopViewController alloc]init];
             break;
+        case 4:
+            vc = [[PictureUploadViewController alloc]init];
         default:
             break;
     }
