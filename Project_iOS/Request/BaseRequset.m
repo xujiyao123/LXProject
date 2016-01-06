@@ -6,7 +6,6 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-int ddLogLevel = LOG_LEVEL_INFO;
 
 #define kRSBaseRequestServerReturnError (-2)
 #define kRSBaseRequestConnectError      (-1)

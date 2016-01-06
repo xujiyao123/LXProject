@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* MultiThreadViewController.m */; };
 		90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* RunloopViewController.m */; };
+		902E161E1C3D598700C86F4F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E161D1C3D598700C86F4F /* AppUser.m */; };
 		904677CA1C1E71420026F096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677C91C1E71420026F096 /* main.m */; };
 		904677CD1C1E71420026F096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CC1C1E71420026F096 /* AppDelegate.m */; };
 		904677D01C1E71420026F096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CF1C1E71420026F096 /* ViewController.m */; };
@@ -153,6 +154,8 @@
 		90121CED1C34E1E400D4075D /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		90121CEF1C35153E00D4075D /* RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
 		90121CF01C35153E00D4075D /* RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		902E161C1C3D598700C86F4F /* AppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUser.h; sourceTree = "<group>"; };
+		902E161D1C3D598700C86F4F /* AppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUser.m; sourceTree = "<group>"; };
 		904677C51C1E71420026F096 /* Project_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904677C91C1E71420026F096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		904677CB1C1E71420026F096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -571,6 +574,8 @@
 				908E6C161C1EB18100CDD941 /* AppTabBarViewController.m */,
 				90C7F2F91C1FF911003289EA /* AppContext.h */,
 				90C7F2FA1C1FF911003289EA /* AppContext.m */,
+				902E161C1C3D598700C86F4F /* AppUser.h */,
+				902E161D1C3D598700C86F4F /* AppUser.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1090,6 +1095,7 @@
 				9046789A1C1E73F60026F096 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				904678CD1C1E73F60026F096 /* UIView+SDExtension.m in Sources */,
 				90E3D6131C3BB556006F8554 /* AGSimpleImageEditorView.m in Sources */,
+				902E161E1C3D598700C86F4F /* AppUser.m in Sources */,
 				904678DF1C1E73F60026F096 /* CJSONSerializer.m in Sources */,
 				904678DC1C1E73F60026F096 /* UIImageView+WebCache.m in Sources */,
 				904678C71C1E73F60026F096 /* TAAbstractDotView.m in Sources */,
