@@ -28,6 +28,13 @@ static AppContext *_center = nil;
     return _firstRequset;
 }
 
+- (AppUser *)currentUser {
+    if (!_currentUser) {
+        _currentUser = [[AppUser alloc]init];
+    }
+    return _currentUser;
+}
+
 - (void)userLogout {
     
 }
