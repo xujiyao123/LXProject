@@ -35,6 +35,13 @@ static AppContext *_center = nil;
     return _currentUser;
 }
 
+- (AppConfig *)config {
+    if (!_config) {
+        _config = [[AppConfig alloc]init];
+    }
+    return _config;
+}
+
 - (void)userLogout {
     
 }

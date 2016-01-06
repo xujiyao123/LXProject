@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AppUser.h"
+#import "AppConfig.h"
 #import "FirstRequset.h"
 
 extern int ddLogLevel;
@@ -17,6 +18,7 @@ extern int ddLogLevel;
 @interface AppContext : NSObject
 
 @property (nonatomic, strong) AppUser *currentUser;
+@property (nonatomic, strong) AppConfig *config;
 @property (nonatomic, strong) FirstRequset *firstRequset;
 + (AppContext *)shareInstance;
 

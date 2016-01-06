@@ -10,6 +10,7 @@
 		90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* MultiThreadViewController.m */; };
 		90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* RunloopViewController.m */; };
 		902E161E1C3D598700C86F4F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E161D1C3D598700C86F4F /* AppUser.m */; };
+		902E16301C3D79AB00C86F4F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E162F1C3D79AB00C86F4F /* AppConfig.m */; };
 		904677CA1C1E71420026F096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677C91C1E71420026F096 /* main.m */; };
 		904677CD1C1E71420026F096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CC1C1E71420026F096 /* AppDelegate.m */; };
 		904677D01C1E71420026F096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677CF1C1E71420026F096 /* ViewController.m */; };
@@ -156,6 +157,8 @@
 		90121CF01C35153E00D4075D /* RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		902E161C1C3D598700C86F4F /* AppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUser.h; sourceTree = "<group>"; };
 		902E161D1C3D598700C86F4F /* AppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUser.m; sourceTree = "<group>"; };
+		902E162E1C3D79AB00C86F4F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		902E162F1C3D79AB00C86F4F /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
 		904677C51C1E71420026F096 /* Project_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904677C91C1E71420026F096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		904677CB1C1E71420026F096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -576,6 +579,8 @@
 				90C7F2FA1C1FF911003289EA /* AppContext.m */,
 				902E161C1C3D598700C86F4F /* AppUser.h */,
 				902E161D1C3D598700C86F4F /* AppUser.m */,
+				902E162E1C3D79AB00C86F4F /* AppConfig.h */,
+				902E162F1C3D79AB00C86F4F /* AppConfig.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1148,6 +1153,7 @@
 				904678E01C1E73F60026F096 /* NSDictionary_JSONExtensions.m in Sources */,
 				904678AA1C1E73F60026F096 /* AppNavigator.m in Sources */,
 				90AAFD221C2C57360091E422 /* DTouchViewCell.m in Sources */,
+				902E16301C3D79AB00C86F4F /* AppConfig.m in Sources */,
 				904677D61C1E71420026F096 /* Project_iOS.xcdatamodeld in Sources */,
 				904678A41C1E73F60026F096 /* UINavigationBar+Image.m in Sources */,
 				904678DB1C1E73F60026F096 /* UIImageView+HighlightedWebCache.m in Sources */,
