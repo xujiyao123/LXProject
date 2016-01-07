@@ -13,8 +13,6 @@
 #import "AppConfig.h"
 #import "FirstRequset.h"
 
-extern int ddLogLevel;
-
 @interface AppContext : NSObject
 
 @property (nonatomic, strong) AppUser *currentUser;

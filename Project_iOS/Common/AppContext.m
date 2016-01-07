@@ -7,7 +7,6 @@
 //
 
 #import "AppContext.h"
-int ddLogLevel = LOG_LEVEL_INFO;
 
 static AppContext *_center = nil;
 

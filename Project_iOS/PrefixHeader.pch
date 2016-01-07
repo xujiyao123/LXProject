@@ -22,11 +22,11 @@
 #import "UIImageView+WebCache.h"
 #import "YYKit.h"
 #import "Masonry.h"
-#import "DDLog.h"
 #import "BaseRequset.h"
 
 #define BaseUrl @"http://182.92.241.171/"
 
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 /*
  *屏幕宽度
  */

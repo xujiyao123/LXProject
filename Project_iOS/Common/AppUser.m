@@ -24,7 +24,7 @@
     user.imName = [dict objectForKey:@"im_name"];
     user.imSecret = [dict objectForKey:@"im_secret"];
     BOOL save = [user persistence];
-    DDLogCInfo(@"save userInfo:%d",save);
+    DebugLog(@"save userInfo:%d",save);
     return user;
 }
 
@@ -72,7 +72,7 @@
                                   error:&error];
         
         if (error) {
-            DDLogCInfo(@"创建 commonPath 失败 %@", error);
+            DebugLog(@"创建 commonPath 失败 %@", error);
         }
     }
     
@@ -140,7 +140,7 @@
     //    dict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
     //    cookie = [NSHTTPCookie cookieWithProperties:dict];
     //    [storage setCookie:cookie];
-    DDLogInfo(@"Cookies :%@", [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]);
+    DebugLog(@"Cookies :%@", [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]);
 }
 
 // 主用户注销 Cookie

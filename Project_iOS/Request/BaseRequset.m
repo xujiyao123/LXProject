@@ -24,7 +24,7 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"application/json", @"text/html", nil];
     manager.requestSerializer.timeoutInterval = 20;
     NSString *fullUrl = [NSString stringWithFormat:@"%@%@", BaseUrl, url];
-    DDLogInfo(@"\n请求接口：%@\n请求的参数：%@\n", fullUrl, requestParam);
+    DebugLog(@"\n请求接口：%@\n请求的参数：%@\n", fullUrl, requestParam);
     if ([method isEqualToString:@"POST"]) {
         [manager POST:fullUrl parameters:requestParam progress:^(NSProgress * _Nonnull uploadProgress) {
             
@@ -36,7 +36,7 @@
                 return ;
             }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            DDLogInfo(@"\n网络错误，请求的错误提示：%@\n", error);
+            DebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
             if (complete != nil) {
                 extError *e = [extError errorWithNSError:error];
                 complete(kRSBaseRequestConnectError, nil, e);
@@ -54,7 +54,7 @@
                 return ;
             }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            DDLogInfo(@"\n网络错误，请求的错误提示：%@\n", error);
+            DebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
             if (complete != nil) {
                 extError *e = [extError errorWithNSError:error];
                 complete(kRSBaseRequestConnectError, nil, e);
