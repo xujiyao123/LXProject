@@ -29,18 +29,24 @@
         [manager POST:fullUrl parameters:requestParam progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                
-                DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
-                
-                dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-                dispatch_async(queue, ^{
+            if ([responseObject isKindOfClass:[NSDictionary class]] && responseObject && ([responseObject allKeys].count > 0)) {
+                //看是否出错
+                NSString *errorNum = [responseObject objectForKey:@"code"];
+                //这里只是用当前接口的情况做例子 实际情况需要换成实际的数字
+                if ([errorNum isEqualToString:@"R00000"]) {
+                    DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
                     complete(kRSBaseRequestSuccess, responseObject, nil);
-                    
-                });
+                }
+                else {
+                    NSString *errorMsg = [responseObject objectForKey:@"content"];
+                    extError *exError = [extError errorWithCode:errorNum.integerValue errorMessage:errorMsg];
+                    complete(errorNum.integerValue, nil, exError);
+                }
             }
             else {
-                return ;
+                // 接口数据为空
+                DebugLog(@"\n请求接口：%@\n接口数据为空", fullUrl);
+                complete(kRSBaseRequestSuccess, @{}, nil);
             }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             DebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
@@ -54,23 +60,30 @@
         [manager GET:fullUrl parameters:requestParam progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
-                
-                dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-                dispatch_async(queue, ^{
+            if ([responseObject isKindOfClass:[NSDictionary class]] && responseObject && ([responseObject allKeys].count > 0)) {
+                //看是否出错
+                NSString *errorNum = [responseObject objectForKey:@"code"];
+                //这里只是用当前接口的情况做例子 实际情况需要换成实际的数字
+                if ([errorNum isEqualToString:@"R00000"]) {
+                    DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
                     complete(kRSBaseRequestSuccess, responseObject, nil);
-                    
-                });
+                }
+                else {
+                    NSString *errorMsg = [responseObject objectForKey:@"content"];
+                    extError *exError = [extError errorWithCode:errorNum.integerValue errorMessage:errorMsg];
+                    complete(errorNum.integerValue, nil, exError);
+                }
             }
             else {
-                return ;
+                // 接口数据为空
+                DebugLog(@"\n请求接口：%@\n接口数据为空", fullUrl);
+                complete(kRSBaseRequestSuccess, @{}, nil);
             }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             DebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
             if (complete != nil) {
-                extError *e = [extError errorWithNSError:error];
-                complete(kRSBaseRequestConnectError, nil, e);
+                extError *exError = [extError errorWithNSError:error];
+                complete(kRSBaseRequestConnectError, nil, exError);
             }
         }];
     }
