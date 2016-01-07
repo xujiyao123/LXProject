@@ -30,7 +30,14 @@
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                complete(kRSBaseRequestSuccess, responseObject, nil);
+                
+                DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
+                
+                dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+                dispatch_async(queue, ^{
+                    complete(kRSBaseRequestSuccess, responseObject, nil);
+                    
+                });
             }
             else {
                 return ;
@@ -48,7 +55,13 @@
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                complete(kRSBaseRequestSuccess, responseObject, nil);
+                DebugLog(@"\n请求接口：%@\n请求的结果：%@\n", fullUrl, responseObject);
+                
+                dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+                dispatch_async(queue, ^{
+                    complete(kRSBaseRequestSuccess, responseObject, nil);
+                    
+                });
             }
             else {
                 return ;
