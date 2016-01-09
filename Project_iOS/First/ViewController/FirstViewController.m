@@ -50,7 +50,8 @@
     [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
         NSLog(@"%@", info[@"content"]);
     }];
-    
+    //测试bool值输出.
+    NSLog(@"%@", self.view.userInteractionEnabled ? @"YES" : @"NO");
     _activity = [[NSUserActivity alloc]initWithActivityType:@"name"];
 //    _activity = [[NSUserActivity alloc]init];
     _activity.keywords = [NSSet setWithArray:@[@"xugege"]];
