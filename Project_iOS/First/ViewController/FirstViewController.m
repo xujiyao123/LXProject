@@ -17,11 +17,12 @@
 #import "RunloopViewController.h"
 #import "PictureUploadViewController.h"
 
-@interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray     *dataArray;
 @property (nonatomic, strong) GuideView   *guideView;
+@property (nonatomic, strong)NSUserActivity *activity;
 
 @end
 
@@ -49,6 +50,26 @@
     [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
         NSLog(@"%@", info[@"content"]);
     }];
+    
+    _activity = [[NSUserActivity alloc]initWithActivityType:@"name"];
+//    _activity = [[NSUserActivity alloc]init];
+    _activity.keywords = [NSSet setWithArray:@[@"xugege"]];
+    _activity.title = @"touch";
+    _activity.eligibleForHandoff = YES;
+    _activity.eligibleForSearch = YES;
+    [_activity becomeCurrent];
+    [_activity invalidate];
+}
+
+- (void)userActivityWasContinued:(NSUserActivity *)userActivity {
+    
+}
+
+- (void)restoreUserActivityState:(NSUserActivity *)activity {
+    if ([activity.title isEqualToString:@"touch"]) {
+        DTouchViewController *vc = [[DTouchViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)DTouchAction {
