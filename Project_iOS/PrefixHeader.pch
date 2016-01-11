@@ -23,6 +23,8 @@
 #import "YYKit.h"
 #import "Masonry.h"
 #import "BaseRequset.h"
+#import <SVProgressHUD.h>
+#import <MJRefresh.h>
 
 #define BaseUrl @"http://182.92.241.171/"
 
@@ -67,6 +69,7 @@ blue:((float)(rgbValue & 0x0000FF))/255.0 \
 alpha:1.0]
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define kAppCommonColor UIColorFromRGB(0x2bd043)
 #define kAppBgCommonColor RGBCOLOR(231,231,231)
 #define kAppTextColor RGBCOLOR(0x1a, 0x1a, 0x1a)
 

@@ -47,8 +47,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DTouchAction) name:@"DTouch" object:nil];
+
+    [SVProgressHUD showWithStatus:@"正在加载"];
     [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
-        NSLog(@"%@", info[@"content"]);
+        [SVProgressHUD dismiss];
+        if (!errorNum) {
+            NSLog(@"%@", info[@"content"]);
+        }
+        else {
+            NSLog(@"%@", errorMsg.titleForError);
+        }
     }];
     //测试bool值输出.
     NSLog(@"%@", self.view.userInteractionEnabled ? @"YES" : @"NO");

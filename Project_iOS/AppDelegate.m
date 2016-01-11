@@ -20,6 +20,9 @@
     // Override point for customization after application launch.
     [self createDtouchItem];
     [AppNavigator openMainViewController];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:UIColorFromRGB(0xeeeeee)];
+    [SVProgressHUD setForegroundColor:kAppCommonColor];
     return YES;
 }
 
