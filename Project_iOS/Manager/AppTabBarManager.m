@@ -26,7 +26,8 @@
     if (!_tabbarViewController) {
         _tabbarViewController = [[AppTabBarViewController alloc]init];
         _tabbarViewController.tabBar.selectedImageTintColor = RGBCOLOR(45, 215, 177);
-        [_tabbarViewController.tabBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]];
+        [_tabbarViewController.tabBar setBackgroundImage:[UIImage imageWithColor:UIColorFromRGB(0xf5f5f5)]];
+        _tabbarViewController.tabBar.selectionIndicatorImage = [UIImage imageWithColor:UIColorFromRGB(0xffffff) size:CGSizeMake(SCREEN_WIDTH / 3, PHONE_CUSTOM_TABBAR_HEIGHT)];
         
         NSMutableArray *items = @[].mutableCopy;
         AppTabbarItem *item = nil;

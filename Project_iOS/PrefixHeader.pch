@@ -60,7 +60,7 @@
 #define PHONE_NAVIGATIONBAR_HEIGHT      44.0f
 #define PHONE_NAVIGATIONBAR_IOS7_HEIGHT 64.0f
 // tabBar高度
-#define PHONE_CUSTOM_TABBAR_HEIGHT      50.0f
+#define PHONE_CUSTOM_TABBAR_HEIGHT      49.0f
 //color
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
