@@ -22,6 +22,7 @@
     }
     [[PKResManager getInstance] addChangeStyleObject:self];
     [self.view setBackgroundColor:kAppBgCommonColor];
+    [[UINavigationBar appearance]setShadowImage:[UIImage imageWithColor:kAppCommonColor size:CGSizeMake(SCREEN_WIDTH, 0.5)]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
