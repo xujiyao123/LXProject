@@ -110,6 +110,12 @@
 		90D1FB861C2B07CC0097CB1A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB851C2B07CC0097CB1A /* Person.m */; };
 		90D1FB891C2B07D70097CB1A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB881C2B07D70097CB1A /* Dog.m */; };
 		90D1FB8C1C2B0E1E0097CB1A /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */; };
+		90DC387A1C50B4A800D120F3 /* TantanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC38791C50B4A800D120F3 /* TantanViewController.m */; };
+		90DC38851C50B4DF00D120F3 /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC387D1C50B4DF00D120F3 /* SKBounceAnimation.m */; };
+		90DC38861C50B4DF00D120F3 /* TTStackCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC387F1C50B4DF00D120F3 /* TTStackCards.m */; };
+		90DC38871C50B4DF00D120F3 /* TTStackSingleCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC38821C50B4DF00D120F3 /* TTStackSingleCardView.m */; };
+		90DC38881C50B4DF00D120F3 /* UIView+GeometryAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC38841C50B4DF00D120F3 /* UIView+GeometryAddition.m */; };
+		90DC388C1C50B55F00D120F3 /* ChosenCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DC388B1C50B55F00D120F3 /* ChosenCard.m */; };
 		90E3D60D1C3BB4B5006F8554 /* PictureUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */; };
 		90E3D6131C3BB556006F8554 /* AGSimpleImageEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D6101C3BB556006F8554 /* AGSimpleImageEditorView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		90E3D6141C3BB556006F8554 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 90E3D6111C3BB556006F8554 /* LICENSE */; };
@@ -331,6 +337,19 @@
 		90D1FB881C2B07D70097CB1A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		90D1FB8A1C2B0E1E0097CB1A /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		90D1FB8B1C2B0E1E0097CB1A /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
+		90DC38781C50B4A800D120F3 /* TantanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TantanViewController.h; sourceTree = "<group>"; };
+		90DC38791C50B4A800D120F3 /* TantanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TantanViewController.m; sourceTree = "<group>"; };
+		90DC387C1C50B4DF00D120F3 /* SKBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBounceAnimation.h; sourceTree = "<group>"; };
+		90DC387D1C50B4DF00D120F3 /* SKBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBounceAnimation.m; sourceTree = "<group>"; };
+		90DC387E1C50B4DF00D120F3 /* TTStackCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStackCards.h; sourceTree = "<group>"; };
+		90DC387F1C50B4DF00D120F3 /* TTStackCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStackCards.m; sourceTree = "<group>"; };
+		90DC38801C50B4DF00D120F3 /* TTStackCardsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStackCardsPrivate.h; sourceTree = "<group>"; };
+		90DC38811C50B4DF00D120F3 /* TTStackSingleCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStackSingleCardView.h; sourceTree = "<group>"; };
+		90DC38821C50B4DF00D120F3 /* TTStackSingleCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStackSingleCardView.m; sourceTree = "<group>"; };
+		90DC38831C50B4DF00D120F3 /* UIView+GeometryAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GeometryAddition.h"; sourceTree = "<group>"; };
+		90DC38841C50B4DF00D120F3 /* UIView+GeometryAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GeometryAddition.m"; sourceTree = "<group>"; };
+		90DC388A1C50B55F00D120F3 /* ChosenCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChosenCard.h; path = TTStackCards/ChosenCard.h; sourceTree = "<group>"; };
+		90DC388B1C50B55F00D120F3 /* ChosenCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChosenCard.m; path = TTStackCards/ChosenCard.m; sourceTree = "<group>"; };
 		90E3D60B1C3BB4B5006F8554 /* PictureUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureUploadViewController.h; sourceTree = "<group>"; };
 		90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureUploadViewController.m; sourceTree = "<group>"; };
 		90E3D60F1C3BB556006F8554 /* AGSimpleImageEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSimpleImageEditorView.h; sourceTree = "<group>"; };
@@ -718,6 +737,9 @@
 		908E6C1A1C1EB3BF00CDD941 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90DC387B1C50B4DF00D120F3 /* TTStackCards */,
+				90DC388A1C50B55F00D120F3 /* ChosenCard.h */,
+				90DC388B1C50B55F00D120F3 /* ChosenCard.m */,
 				90E3D60E1C3BB556006F8554 /* AGSimpleImageEditorView */,
 				90FAE7381C29504A00271AAA /* FirstViewCell.h */,
 				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
@@ -744,6 +766,8 @@
 				90121CF01C35153E00D4075D /* RunloopViewController.m */,
 				90E3D60B1C3BB4B5006F8554 /* PictureUploadViewController.h */,
 				90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */,
+				90DC38781C50B4A800D120F3 /* TantanViewController.h */,
+				90DC38791C50B4A800D120F3 /* TantanViewController.m */,
 				90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */,
 				90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
@@ -855,6 +879,22 @@
 				90B2A4291C34278A00739018 /* UIView+SDAutoLayout.m */,
 			);
 			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		90DC387B1C50B4DF00D120F3 /* TTStackCards */ = {
+			isa = PBXGroup;
+			children = (
+				90DC387C1C50B4DF00D120F3 /* SKBounceAnimation.h */,
+				90DC387D1C50B4DF00D120F3 /* SKBounceAnimation.m */,
+				90DC387E1C50B4DF00D120F3 /* TTStackCards.h */,
+				90DC387F1C50B4DF00D120F3 /* TTStackCards.m */,
+				90DC38801C50B4DF00D120F3 /* TTStackCardsPrivate.h */,
+				90DC38811C50B4DF00D120F3 /* TTStackSingleCardView.h */,
+				90DC38821C50B4DF00D120F3 /* TTStackSingleCardView.m */,
+				90DC38831C50B4DF00D120F3 /* UIView+GeometryAddition.h */,
+				90DC38841C50B4DF00D120F3 /* UIView+GeometryAddition.m */,
+			);
+			path = TTStackCards;
 			sourceTree = "<group>";
 		};
 		90E3D60E1C3BB556006F8554 /* AGSimpleImageEditorView */ = {
@@ -1054,12 +1094,16 @@
 				904678D51C1E73F60026F096 /* SDWebImageManager.m in Sources */,
 				904678931C1E73F60026F096 /* CALayer+Add.m in Sources */,
 				90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */,
+				90DC387A1C50B4A800D120F3 /* TantanViewController.m in Sources */,
 				904678DD1C1E73F60026F096 /* UIView+WebCacheOperation.m in Sources */,
+				90DC38881C50B4DF00D120F3 /* UIView+GeometryAddition.m in Sources */,
 				904678A31C1E73F60026F096 /* UIImage+Addtional.m in Sources */,
 				9046789D1C1E73F60026F096 /* UIButton+Addictions.m in Sources */,
+				90DC38861C50B4DF00D120F3 /* TTStackCards.m in Sources */,
 				904678981C1E73F60026F096 /* NSObject-ClassName.m in Sources */,
 				904678A01C1E73F60026F096 /* UIDevice+Addtional.m in Sources */,
 				904678D61C1E73F60026F096 /* SDWebImagePrefetcher.m in Sources */,
+				90DC388C1C50B55F00D120F3 /* ChosenCard.m in Sources */,
 				904678BB1C1E73F60026F096 /* GTMStackTrace.m in Sources */,
 				904678D71C1E73F60026F096 /* UIButton+WebCache.m in Sources */,
 				904678D11C1E73F60026F096 /* SDWebImageCompat.m in Sources */,
@@ -1075,6 +1119,8 @@
 				908E6C2C1C1EB3FA00CDD941 /* ThirdViewController.m in Sources */,
 				904678961C1E73F60026F096 /* NSDictionary+NSDictionaryExt.m in Sources */,
 				90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */,
+				90DC38851C50B4DF00D120F3 /* SKBounceAnimation.m in Sources */,
+				90DC38871C50B4DF00D120F3 /* TTStackSingleCardView.m in Sources */,
 				908E6C291C1EB3EF00CDD941 /* SecondViewController.m in Sources */,
 				90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */,
 				904678C81C1E73F60026F096 /* TAAnimatedDotView.m in Sources */,
@@ -1211,6 +1257,10 @@
 				INFOPLIST_FILE = Project_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project_iOS/First/View/TTStackCards",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "liuxu.com.Project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1229,6 +1279,10 @@
 				INFOPLIST_FILE = Project_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project_iOS/First/View/TTStackCards",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "liuxu.com.Project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
