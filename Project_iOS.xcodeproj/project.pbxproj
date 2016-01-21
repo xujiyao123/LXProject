@@ -72,6 +72,9 @@
 		904678DE1C1E73F60026F096 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046788D1C1E73F60026F096 /* CJSONDeserializer.m */; };
 		904678DF1C1E73F60026F096 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046788F1C1E73F60026F096 /* CJSONSerializer.m */; };
 		904678E01C1E73F60026F096 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 904678921C1E73F60026F096 /* NSDictionary_JSONExtensions.m */; };
+		9046E9771C50D60A00A77A66 /* TRSDialScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E9741C50D60A00A77A66 /* TRSDialScrollView.m */; };
+		9046E9781C50D60A00A77A66 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E9761C50D60A00A77A66 /* TRSDialView.m */; };
+		9046E97B1C50D62400A77A66 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E97A1C50D62400A77A66 /* TimeViewController.m */; };
 		9087B55D1C313C72005346C4 /* FirstRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9087B55C1C313C72005346C4 /* FirstRequset.m */; };
 		908E6C141C1EB13900CDD941 /* AppTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C131C1EB13900CDD941 /* AppTabBarManager.m */; };
 		908E6C171C1EB18100CDD941 /* AppTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C161C1EB18100CDD941 /* AppTabBarViewController.m */; };
@@ -276,6 +279,12 @@
 		904678911C1E73F60026F096 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		904678921C1E73F60026F096 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		904678E41C1E76070026F096 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9046E9731C50D60A00A77A66 /* TRSDialScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSDialScrollView.h; sourceTree = "<group>"; };
+		9046E9741C50D60A00A77A66 /* TRSDialScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialScrollView.m; sourceTree = "<group>"; };
+		9046E9751C50D60A00A77A66 /* TRSDialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSDialView.h; sourceTree = "<group>"; };
+		9046E9761C50D60A00A77A66 /* TRSDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialView.m; sourceTree = "<group>"; };
+		9046E9791C50D62400A77A66 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		9046E97A1C50D62400A77A66 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		9087B55B1C313C72005346C4 /* FirstRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstRequset.h; sourceTree = "<group>"; };
 		9087B55C1C313C72005346C4 /* FirstRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstRequset.m; sourceTree = "<group>"; };
 		908E6C121C1EB13900CDD941 /* AppTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarManager.h; sourceTree = "<group>"; };
@@ -711,6 +720,17 @@
 			path = TouchJSON;
 			sourceTree = "<group>";
 		};
+		9046E9721C50D60A00A77A66 /* TRSDialScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9046E9731C50D60A00A77A66 /* TRSDialScrollView.h */,
+				9046E9741C50D60A00A77A66 /* TRSDialScrollView.m */,
+				9046E9751C50D60A00A77A66 /* TRSDialView.h */,
+				9046E9761C50D60A00A77A66 /* TRSDialView.m */,
+			);
+			path = TRSDialScrollView;
+			sourceTree = "<group>";
+		};
 		908E6C181C1EB3BF00CDD941 /* First */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +761,7 @@
 				90DC388A1C50B55F00D120F3 /* ChosenCard.h */,
 				90DC388B1C50B55F00D120F3 /* ChosenCard.m */,
 				90E3D60E1C3BB556006F8554 /* AGSimpleImageEditorView */,
+				9046E9721C50D60A00A77A66 /* TRSDialScrollView */,
 				90FAE7381C29504A00271AAA /* FirstViewCell.h */,
 				90FAE7391C29504A00271AAA /* FirstViewCell.m */,
 				90AAFD201C2C57360091E422 /* DTouchViewCell.h */,
@@ -768,6 +789,8 @@
 				90E3D60C1C3BB4B5006F8554 /* PictureUploadViewController.m */,
 				90DC38781C50B4A800D120F3 /* TantanViewController.h */,
 				90DC38791C50B4A800D120F3 /* TantanViewController.m */,
+				9046E9791C50D62400A77A66 /* TimeViewController.h */,
+				9046E97A1C50D62400A77A66 /* TimeViewController.m */,
 				90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */,
 				90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
@@ -1076,6 +1099,7 @@
 				90C7F2FE1C1FFB6A003289EA /* extError.m in Sources */,
 				904678A91C1E73F60026F096 /* AppNavigationController.m in Sources */,
 				908E6C141C1EB13900CDD941 /* AppTabBarManager.m in Sources */,
+				9046E9781C50D60A00A77A66 /* TRSDialView.m in Sources */,
 				904678C91C1E73F60026F096 /* TADotView.m in Sources */,
 				904678A21C1E73F60026F096 /* UIFont+Ext.m in Sources */,
 				904678CA1C1E73F60026F096 /* TAPageControl.m in Sources */,
@@ -1096,6 +1120,7 @@
 				90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */,
 				90DC387A1C50B4A800D120F3 /* TantanViewController.m in Sources */,
 				904678DD1C1E73F60026F096 /* UIView+WebCacheOperation.m in Sources */,
+				9046E97B1C50D62400A77A66 /* TimeViewController.m in Sources */,
 				90DC38881C50B4DF00D120F3 /* UIView+GeometryAddition.m in Sources */,
 				904678A31C1E73F60026F096 /* UIImage+Addtional.m in Sources */,
 				9046789D1C1E73F60026F096 /* UIButton+Addictions.m in Sources */,
@@ -1105,6 +1130,7 @@
 				904678D61C1E73F60026F096 /* SDWebImagePrefetcher.m in Sources */,
 				90DC388C1C50B55F00D120F3 /* ChosenCard.m in Sources */,
 				904678BB1C1E73F60026F096 /* GTMStackTrace.m in Sources */,
+				9046E9771C50D60A00A77A66 /* TRSDialScrollView.m in Sources */,
 				904678D71C1E73F60026F096 /* UIButton+WebCache.m in Sources */,
 				904678D11C1E73F60026F096 /* SDWebImageCompat.m in Sources */,
 				904678E01C1E73F60026F096 /* NSDictionary_JSONExtensions.m in Sources */,

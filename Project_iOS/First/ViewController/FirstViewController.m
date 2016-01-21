@@ -17,6 +17,7 @@
 #import "RunloopViewController.h"
 #import "PictureUploadViewController.h"
 #import "TantanViewController.h"
+#import "TimeViewController.h"
 
 @interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
@@ -31,7 +32,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"图片上传", @"探探首页"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"图片上传", @"探探首页", @"刻度尺时间选择器"];
     }
     return self;
 }
@@ -146,6 +147,10 @@
             break;
         case 5:
             vc = [[TantanViewController alloc]init];
+            break;
+        case 6:
+            vc = [[TimeViewController alloc]init];
+            break;
         default:
             break;
     }
