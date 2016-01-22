@@ -86,6 +86,7 @@
 		908E6C3C1C1EB52200CDD941 /* UIFont+PKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C341C1EB52200CDD941 /* UIFont+PKFont.m */; };
 		908E6C3D1C1EB52200CDD941 /* UIImage+PKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C361C1EB52200CDD941 /* UIImage+PKImage.m */; };
 		908E6C3E1C1EB52200CDD941 /* PKResManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C381C1EB52200CDD941 /* PKResManager.m */; };
+		90A81AAE1C52636400F33333 /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A81AAD1C52636400F33333 /* HTMLViewController.m */; };
 		90AAFD1D1C2C52B40091E422 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; };
 		90AAFD1E1C2C52B40091E422 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAFD1C1C2C52B40091E422 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90AAFD221C2C57360091E422 /* DTouchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAFD211C2C57360091E422 /* DTouchViewCell.m */; };
@@ -308,6 +309,8 @@
 		908E6C371C1EB52200CDD941 /* PKResManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKResManager.h; sourceTree = "<group>"; };
 		908E6C381C1EB52200CDD941 /* PKResManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKResManager.m; sourceTree = "<group>"; };
 		908E6C391C1EB52200CDD941 /* PKResManagerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKResManagerKit.h; sourceTree = "<group>"; };
+		90A81AAC1C52636400F33333 /* HTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLViewController.h; sourceTree = "<group>"; };
+		90A81AAD1C52636400F33333 /* HTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLViewController.m; sourceTree = "<group>"; };
 		90AAFD1C1C2C52B40091E422 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		90AAFD201C2C57360091E422 /* DTouchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTouchViewCell.h; sourceTree = "<group>"; };
 		90AAFD211C2C57360091E422 /* DTouchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTouchViewCell.m; sourceTree = "<group>"; };
@@ -791,6 +794,8 @@
 				90DC38791C50B4A800D120F3 /* TantanViewController.m */,
 				9046E9791C50D62400A77A66 /* TimeViewController.h */,
 				9046E97A1C50D62400A77A66 /* TimeViewController.m */,
+				90A81AAC1C52636400F33333 /* HTMLViewController.h */,
+				90A81AAD1C52636400F33333 /* HTMLViewController.m */,
 				90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */,
 				90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */,
 				90FAE7411C2959B100271AAA /* DTouchDetailViewController.h */,
@@ -1158,6 +1163,7 @@
 				90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */,
 				9046789C1C1E73F60026F096 /* UIBarButtonItem+Image.m in Sources */,
 				904678BA1C1E73F60026F096 /* GTMBase64.m in Sources */,
+				90A81AAE1C52636400F33333 /* HTMLViewController.m in Sources */,
 				908E6C171C1EB18100CDD941 /* AppTabBarViewController.m in Sources */,
 				904678D31C1E73F60026F096 /* SDWebImageDownloader.m in Sources */,
 				90B2A4311C34291200739018 /* CellAutoLayoutCell.m in Sources */,
