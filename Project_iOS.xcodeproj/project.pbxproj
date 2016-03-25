@@ -75,6 +75,7 @@
 		9046E9771C50D60A00A77A66 /* TRSDialScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E9741C50D60A00A77A66 /* TRSDialScrollView.m */; };
 		9046E9781C50D60A00A77A66 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E9761C50D60A00A77A66 /* TRSDialView.m */; };
 		9046E97B1C50D62400A77A66 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046E97A1C50D62400A77A66 /* TimeViewController.m */; };
+		9079F4111CA0046A0005C1CF /* SecondDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9079F4101CA0046A0005C1CF /* SecondDetailViewController.m */; };
 		9087B55D1C313C72005346C4 /* FirstRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9087B55C1C313C72005346C4 /* FirstRequset.m */; };
 		908E6C141C1EB13900CDD941 /* AppTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C131C1EB13900CDD941 /* AppTabBarManager.m */; };
 		908E6C171C1EB18100CDD941 /* AppTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908E6C161C1EB18100CDD941 /* AppTabBarViewController.m */; };
@@ -286,6 +287,8 @@
 		9046E9761C50D60A00A77A66 /* TRSDialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSDialView.m; sourceTree = "<group>"; };
 		9046E9791C50D62400A77A66 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
 		9046E97A1C50D62400A77A66 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		9079F40F1CA0046A0005C1CF /* SecondDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondDetailViewController.h; sourceTree = "<group>"; };
+		9079F4101CA0046A0005C1CF /* SecondDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondDetailViewController.m; sourceTree = "<group>"; };
 		9087B55B1C313C72005346C4 /* FirstRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstRequset.h; sourceTree = "<group>"; };
 		9087B55C1C313C72005346C4 /* FirstRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstRequset.m; sourceTree = "<group>"; };
 		908E6C121C1EB13900CDD941 /* AppTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarManager.h; sourceTree = "<group>"; };
@@ -835,6 +838,8 @@
 			children = (
 				908E6C271C1EB3EF00CDD941 /* SecondViewController.h */,
 				908E6C281C1EB3EF00CDD941 /* SecondViewController.m */,
+				9079F40F1CA0046A0005C1CF /* SecondDetailViewController.h */,
+				9079F4101CA0046A0005C1CF /* SecondDetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1089,6 +1094,7 @@
 				90E3D6131C3BB556006F8554 /* AGSimpleImageEditorView.m in Sources */,
 				902E161E1C3D598700C86F4F /* AppUser.m in Sources */,
 				904678DF1C1E73F60026F096 /* CJSONSerializer.m in Sources */,
+				9079F4111CA0046A0005C1CF /* SecondDetailViewController.m in Sources */,
 				904678DC1C1E73F60026F096 /* UIImageView+WebCache.m in Sources */,
 				904678C71C1E73F60026F096 /* TAAbstractDotView.m in Sources */,
 				9087B55D1C313C72005346C4 /* FirstRequset.m in Sources */,

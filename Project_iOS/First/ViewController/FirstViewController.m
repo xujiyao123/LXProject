@@ -25,7 +25,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray     *dataArray;
 @property (nonatomic, strong) GuideView   *guideView;
-@property (nonatomic, strong)NSUserActivity *activity;
+@property (nonatomic, strong) NSUserActivity *activity;
 
 @end
 
@@ -51,16 +51,16 @@
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DTouchAction) name:@"DTouch" object:nil];
 
-    [SVProgressHUD showWithStatus:@"正在加载"];
-    [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
-        [SVProgressHUD dismiss];
-        if (!errorNum) {
-            NSLog(@"%@", info[@"content"]);
-        }
-        else {
-            NSLog(@"%@", errorMsg.titleForError);
-        }
-    }];
+//    [SVProgressHUD showWithStatus:@"正在加载"];
+//    [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
+//        [SVProgressHUD dismiss];
+//        if (!errorNum) {
+//            NSLog(@"%@", info[@"content"]);
+//        }
+//        else {
+//            NSLog(@"%@", errorMsg.titleForError);
+//        }
+//    }];
     //测试bool值输出.
     NSLog(@"%@", self.view.userInteractionEnabled ? @"YES" : @"NO");
     _activity = [[NSUserActivity alloc]initWithActivityType:@"name"];

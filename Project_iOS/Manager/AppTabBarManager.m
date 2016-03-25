@@ -39,6 +39,7 @@
         [items addObject:item];
         item.image = [[UIImage imageForKey:@"tab_home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         item.selectedImage = [UIImage imageForKey:@"tab_home"];
+        item.tag = 1;
         first.title = item.title = @"one";
         AppNavigationController *homeNavi = [[AppNavigationController alloc]initWithRootViewController:first];
         homeNavi.tabBarItem = item;

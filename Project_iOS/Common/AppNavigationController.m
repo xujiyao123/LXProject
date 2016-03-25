@@ -38,6 +38,10 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
 - (void)dealloc
 {
     [[PKResManager getInstance] removeChangeStyleObject:self];
