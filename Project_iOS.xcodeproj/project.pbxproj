@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80F713BF1CCE09EC00B53BC0 /* AnnmateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F713BE1CCE09EC00B53BC0 /* AnnmateView.m */; };
+		80F713C71CCE132800B53BC0 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F713C61CCE132800B53BC0 /* UIView+Nib.m */; };
+		80F713CE1CCE15CF00B53BC0 /* AnnsubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */; };
 		90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* MultiThreadViewController.m */; };
 		90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* RunloopViewController.m */; };
 		902E161E1C3D598700C86F4F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E161D1C3D598700C86F4F /* AppUser.m */; };
@@ -152,6 +155,11 @@
 /* Begin PBXFileReference section */
 		78FB942FDA4542A9264B7E9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8F59611FA324A4629878FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		80F713BD1CCE09EC00B53BC0 /* AnnmateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnmateView.h; sourceTree = "<group>"; };
+		80F713BE1CCE09EC00B53BC0 /* AnnmateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnmateView.m; sourceTree = "<group>"; };
+		80F713C51CCE132800B53BC0 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
+		80F713C61CCE132800B53BC0 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
+		80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnsubView.xib; sourceTree = "<group>"; };
 		90121CEC1C34E1E400D4075D /* MultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
 		90121CED1C34E1E400D4075D /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		90121CEF1C35153E00D4075D /* RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
@@ -868,6 +876,11 @@
 		908E6C221C1EB3CA00CDD941 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80F713C51CCE132800B53BC0 /* UIView+Nib.h */,
+				80F713C61CCE132800B53BC0 /* UIView+Nib.m */,
+				80F713BD1CCE09EC00B53BC0 /* AnnmateView.h */,
+				80F713BE1CCE09EC00B53BC0 /* AnnmateView.m */,
+				80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1009,6 +1022,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				904678B01C1E73F60026F096 /* skin_default.bundle in Resources */,
+				80F713CE1CCE15CF00B53BC0 /* AnnsubView.xib in Resources */,
 				904678AF1C1E73F60026F096 /* resource_common.bundle in Resources */,
 				90E3D6151C3BB556006F8554 /* transparencyPattern.png in Resources */,
 				904677D81C1E71420026F096 /* Assets.xcassets in Resources */,
@@ -1136,6 +1150,7 @@
 				90FAE7431C2959B100271AAA /* DTouchDetailViewController.m in Sources */,
 				90DC387A1C50B4A800D120F3 /* TantanViewController.m in Sources */,
 				904678DD1C1E73F60026F096 /* UIView+WebCacheOperation.m in Sources */,
+				80F713BF1CCE09EC00B53BC0 /* AnnmateView.m in Sources */,
 				9046E97B1C50D62400A77A66 /* TimeViewController.m in Sources */,
 				90DC38881C50B4DF00D120F3 /* UIView+GeometryAddition.m in Sources */,
 				904678A31C1E73F60026F096 /* UIImage+Addtional.m in Sources */,
@@ -1176,6 +1191,7 @@
 				904678BA1C1E73F60026F096 /* GTMBase64.m in Sources */,
 				90A81AAE1C52636400F33333 /* HTMLViewController.m in Sources */,
 				908E6C171C1EB18100CDD941 /* AppTabBarViewController.m in Sources */,
+				80F713C71CCE132800B53BC0 /* UIView+Nib.m in Sources */,
 				904678D31C1E73F60026F096 /* SDWebImageDownloader.m in Sources */,
 				90B2A4311C34291200739018 /* CellAutoLayoutCell.m in Sources */,
 				90D1FB891C2B07D70097CB1A /* Dog.m in Sources */,

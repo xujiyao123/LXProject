@@ -7,7 +7,7 @@
 //
 
 #import "ThirdViewController.h"
-
+#import "AnnmateView.h"
 @interface ThirdViewController ()
 
 @end
@@ -16,6 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    AnnmateView * anv = [[AnnmateView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    anv.ButtonAction = ^(UIButton * button , NSInteger index) {
+        NSLog(@"%ld  %@" , index  ,button);
+    };
+    [self.view addSubview:anv];
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 
