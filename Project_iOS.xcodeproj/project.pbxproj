@@ -126,6 +126,7 @@
 		90E3D6141C3BB556006F8554 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 90E3D6111C3BB556006F8554 /* LICENSE */; };
 		90E3D6151C3BB556006F8554 /* transparencyPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E3D6121C3BB556006F8554 /* transparencyPattern.png */; };
 		90E3D6181C3BB8A1006F8554 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */; };
+		90E42CA31CAD19EB00E16420 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E42CA21CAD19EB00E16420 /* CFNetwork.framework */; };
 		90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7361C29503200271AAA /* BaseTableViewCell.m */; };
 		90FAE73A1C29504A00271AAA /* FirstViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7391C29504A00271AAA /* FirstViewCell.m */; };
 		90FAE7401C2952B100271AAA /* DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE73F1C2952B100271AAA /* DTouchViewController.m */; };
@@ -373,6 +374,7 @@
 		90E3D6121C3BB556006F8554 /* transparencyPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparencyPattern.png; sourceTree = "<group>"; };
 		90E3D6161C3BB8A1006F8554 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
 		90E3D6171C3BB8A1006F8554 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		90E42CA21CAD19EB00E16420 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		90FAE7351C29503200271AAA /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		90FAE7361C29503200271AAA /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		90FAE7381C29504A00271AAA /* FirstViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCell.h; sourceTree = "<group>"; };
@@ -391,10 +393,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E42CA31CAD19EB00E16420 /* CFNetwork.framework in Frameworks */,
+				90C7F4141C20007A003289EA /* MobileCoreServices.framework in Frameworks */,
 				90C7F41A1C2000AF003289EA /* libz.tbd in Frameworks */,
 				90C7F4181C20009E003289EA /* libsqlite3.tbd in Frameworks */,
 				90C7F4161C200091003289EA /* SystemConfiguration.framework in Frameworks */,
-				90C7F4141C20007A003289EA /* MobileCoreServices.framework in Frameworks */,
 				90AAFD1D1C2C52B40091E422 /* Realm.framework in Frameworks */,
 				90C7F4121C200072003289EA /* Accelerate.framework in Frameworks */,
 				90C7F4101C20006B003289EA /* AssetsLibrary.framework in Frameworks */,
@@ -415,6 +418,7 @@
 		5B93DE200A0F73B46BED59B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90E42CA21CAD19EB00E16420 /* CFNetwork.framework */,
 				78FB942FDA4542A9264B7E9E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -977,6 +981,7 @@
 				TargetAttributes = {
 					904677C41C1E71420026F096 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CRL42X8G4P;
 					};
 				};
 			};
@@ -1287,6 +1292,7 @@
 			baseConfigurationReference = E8D45C5F42D93E98B63EF691 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1309,6 +1315,7 @@
 			baseConfigurationReference = 7B8F59611FA324A4629878FD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
