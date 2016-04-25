@@ -418,6 +418,20 @@
 		5B93DE200A0F73B46BED59B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90AAFD1C1C2C52B40091E422 /* Realm.framework */,
+				90C7F4191C2000AF003289EA /* libz.tbd */,
+				90C7F4171C20009E003289EA /* libsqlite3.tbd */,
+				90C7F4151C200091003289EA /* SystemConfiguration.framework */,
+				90C7F4131C20007A003289EA /* MobileCoreServices.framework */,
+				90C7F4111C200072003289EA /* Accelerate.framework */,
+				90C7F40F1C20006B003289EA /* AssetsLibrary.framework */,
+				90C7F40D1C200066003289EA /* ImageIO.framework */,
+				90C7F40B1C20005B003289EA /* QuartzCore.framework */,
+				90C7F4091C200053003289EA /* CoreImage.framework */,
+				90C7F4071C20004C003289EA /* CoreGraphics.framework */,
+				90C7F4051C200045003289EA /* CoreText.framework */,
+				90C7F4031C20003E003289EA /* CoreFoundation.framework */,
+				90C7F4011C200037003289EA /* UIKit.framework */,
 				90E42CA21CAD19EB00E16420 /* CFNetwork.framework */,
 				78FB942FDA4542A9264B7E9E /* libPods.a */,
 			);
@@ -436,20 +450,6 @@
 		904677BC1C1E71410026F096 = {
 			isa = PBXGroup;
 			children = (
-				90AAFD1C1C2C52B40091E422 /* Realm.framework */,
-				90C7F4191C2000AF003289EA /* libz.tbd */,
-				90C7F4171C20009E003289EA /* libsqlite3.tbd */,
-				90C7F4151C200091003289EA /* SystemConfiguration.framework */,
-				90C7F4131C20007A003289EA /* MobileCoreServices.framework */,
-				90C7F4111C200072003289EA /* Accelerate.framework */,
-				90C7F40F1C20006B003289EA /* AssetsLibrary.framework */,
-				90C7F40D1C200066003289EA /* ImageIO.framework */,
-				90C7F40B1C20005B003289EA /* QuartzCore.framework */,
-				90C7F4091C200053003289EA /* CoreImage.framework */,
-				90C7F4071C20004C003289EA /* CoreGraphics.framework */,
-				90C7F4051C200045003289EA /* CoreText.framework */,
-				90C7F4031C20003E003289EA /* CoreFoundation.framework */,
-				90C7F4011C200037003289EA /* UIKit.framework */,
 				904677C71C1E71420026F096 /* Project_iOS */,
 				904677C61C1E71420026F096 /* Products */,
 				8C984495410E90C31BA7884A /* Pods */,
