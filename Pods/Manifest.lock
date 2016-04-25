@@ -14,37 +14,25 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - EaseMobSDK (2.2.3)
   - Masonry (0.6.3)
   - MJRefresh (3.1.0)
-  - SVProgressHUD (HEAD based on 2.0.2)
+  - SVProgressHUD (HEAD based on 2.0.3)
   - YYKit (0.9.7):
     - YYKit/no-arc (= 0.9.7)
   - YYKit/no-arc (0.9.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - EaseMobSDK (from `https://github.com/easemob/sdk-ios-cocoapods.git`)
   - Masonry
   - MJRefresh
   - SVProgressHUD (HEAD)
   - YYKit
 
-EXTERNAL SOURCES:
-  EaseMobSDK:
-    :git: https://github.com/easemob/sdk-ios-cocoapods.git
-
-CHECKOUT OPTIONS:
-  EaseMobSDK:
-    :commit: d68304c4b389321d00225e5c07f815f967f2d554
-    :git: https://github.com/easemob/sdk-ios-cocoapods.git
-
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  EaseMobSDK: 71deb8aa9a25399dd9b1ac159d0538a01f537ced
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
-  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYKit: b6b9319f5e6b01784b6a4225cec4c3dcf8f6d249
 
 COCOAPODS: 0.39.0
