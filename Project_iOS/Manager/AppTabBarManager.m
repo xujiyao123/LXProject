@@ -7,9 +7,9 @@
 //
 
 #import "AppTabBarManager.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
+#import "LXFirstViewController.h"
+#import "LXSecondViewController.h"
+#import "LXThirdViewController.h"
 
 @implementation AppTabBarManager
 
@@ -34,7 +34,7 @@
         AppTabbarItem *item = nil;
         
         NSMutableArray *viewControllers = [NSMutableArray array];
-        FirstViewController *first = [[FirstViewController alloc]init];
+        LXFirstViewController *first = [[LXFirstViewController alloc]init];
         item = [AppTabbarItem new];
         [items addObject:item];
         item.image = [[UIImage imageForKey:@"tab_home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -46,7 +46,7 @@
         [homeNavi.view setBackgroundColor:[UIColor whiteColor]];
         [viewControllers addObject:homeNavi];
         
-        SecondViewController *second = [[SecondViewController alloc]init];
+        LXSecondViewController *second = [[LXSecondViewController alloc]init];
         item = [AppTabbarItem new];
         [items addObject:item];
         item.image = [[UIImage imageForKey:@"tab_order_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -56,7 +56,7 @@
         orderNavi.tabBarItem = item;
         [viewControllers addObject:orderNavi];
         
-        ThirdViewController *third = [[ThirdViewController alloc]init];
+        LXThirdViewController *third = [[LXThirdViewController alloc]init];
         item = [AppTabbarItem new];
         [items addObject:item];
         item.image = [[UIImage imageForKey:@"tab_user_normal"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

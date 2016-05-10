@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  ThirdViewController.h
 //  Project_iOS
 //
 //  Created by 刘旭 on 15/12/14.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SecondViewController : BaseViewController
+@interface LXThirdViewController : BaseViewController
 
 @end

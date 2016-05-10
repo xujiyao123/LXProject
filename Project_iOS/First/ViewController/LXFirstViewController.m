@@ -8,19 +8,16 @@
 
 //2016 加油.
 
-#import "FirstViewController.h"
+#import "LXFirstViewController.h"
 #import "FirstViewCell.h"
-#import "DTouchViewController.h"
+#import "LXDTouchViewController.h"
 #import "GuideView.h"
-#import "CellAutoLayoutViewController.h"
-#import "MultiThreadViewController.h"
-#import "RunloopViewController.h"
-#import "PictureUploadViewController.h"
-#import "TantanViewController.h"
-#import "TimeViewController.h"
-#import "HTMLViewController.h"
+#import "LXCellAutoLayoutViewController.h"
+#import "LXMultiThreadViewController.h"
+#import "LXRunloopViewController.h"
+#import "LXHTMLViewController.h"
 
-@interface FirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
+@interface LXFirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray     *dataArray;
@@ -29,11 +26,11 @@
 
 @end
 
-@implementation FirstViewController
+@implementation LXFirstViewController
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"图片上传", @"探探首页", @"刻度尺时间选择器", @"HTML片段"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"HTML片段"];
     }
     return self;
 }
@@ -51,16 +48,6 @@
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DTouchAction) name:@"DTouch" object:nil];
 
-//    [SVProgressHUD showWithStatus:@"正在加载"];
-//    [APPCONTEXT.firstRequset registeWithNearShops:@"1" lati:@"1" page:0 pageCount:10 days:1 mealType:1 success:^(NSInteger errorNum, NSDictionary *info, extError *errorMsg) {
-//        [SVProgressHUD dismiss];
-//        if (!errorNum) {
-//            NSLog(@"%@", info[@"content"]);
-//        }
-//        else {
-//            NSLog(@"%@", errorMsg.titleForError);
-//        }
-//    }];
     //测试bool值输出.
     NSLog(@"%@", self.view.userInteractionEnabled ? @"YES" : @"NO");
     _activity = [[NSUserActivity alloc]initWithActivityType:@"name"];
@@ -79,13 +66,13 @@
 
 - (void)restoreUserActivityState:(NSUserActivity *)activity {
     if ([activity.title isEqualToString:@"touch"]) {
-        DTouchViewController *vc = [[DTouchViewController alloc]init];
+        LXDTouchViewController *vc = [[LXDTouchViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
 - (void)DTouchAction {
-    DTouchViewController *vc = [[DTouchViewController alloc]init];
+    LXDTouchViewController *vc = [[LXDTouchViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -132,28 +119,19 @@
     UIViewController *vc = [[UIViewController alloc]init];
     switch (indexPath.row) {
         case 0:
-            vc = [[DTouchViewController alloc]init];
+            vc = [[LXDTouchViewController alloc]init];
             break;
         case 1:
-            vc = [[CellAutoLayoutViewController alloc]init];
+            vc = [[LXCellAutoLayoutViewController alloc]init];
             break;
         case 2:
-            vc = [[MultiThreadViewController alloc]init];
+            vc = [[LXMultiThreadViewController alloc]init];
             break;
         case 3:
-            vc = [[RunloopViewController alloc]init];
+            vc = [[LXRunloopViewController alloc]init];
             break;
         case 4:
-            vc = [[PictureUploadViewController alloc]init];
-            break;
-        case 5:
-            vc = [[TantanViewController alloc]init];
-            break;
-        case 6:
-            vc = [[TimeViewController alloc]init];
-            break;
-        case 7:
-            vc = [[HTMLViewController alloc]init];
+            vc = [[LXHTMLViewController alloc]init];
             break;
         default:
             break;

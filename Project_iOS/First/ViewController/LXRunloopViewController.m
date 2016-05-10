@@ -6,13 +6,13 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-#import "RunloopViewController.h"
+#import "LXRunloopViewController.h"
 
-@interface RunloopViewController ()
+@interface LXRunloopViewController ()
 
 @end
 
-@implementation RunloopViewController
+@implementation LXRunloopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MultiThreadViewController : BaseViewController
+@interface LXMultiThreadViewController : BaseViewController
 
 @end

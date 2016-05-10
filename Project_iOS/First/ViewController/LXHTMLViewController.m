@@ -6,16 +6,16 @@
 //  Copyright © 2016年 刘旭. All rights reserved.
 //
 
-#import "HTMLViewController.h"
+#import "LXHTMLViewController.h"
 
-@interface HTMLViewController ()<UIWebViewDelegate>
+@interface LXHTMLViewController ()<UIWebViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIWebView *webView;
 
 @end
 
-@implementation HTMLViewController
+@implementation LXHTMLViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface CellAutoLayoutViewController : BaseViewController
+@interface LXCellAutoLayoutViewController : BaseViewController
 
 @end

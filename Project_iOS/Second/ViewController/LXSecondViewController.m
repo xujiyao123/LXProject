@@ -1,28 +1,27 @@
 //
-//  RealmViewController.m
+//  SecondViewController.m
 //  Project_iOS
 //
-//  Created by 刘旭 on 15/12/24.
-//  Copyright © 2015年 刘旭. All rights reserved.
+//  Created by 刘旭 on 15/12/14.
+//  Copyright (c) 2015年 刘旭. All rights reserved.
 //
 
-#import "RealmViewController.h"
-#import "Person.h"
-#import "Dog.h"
+#import "LXSecondViewController.h"
 
-@interface RealmViewController ()
+@interface LXSecondViewController ()
 
 @end
 
-@implementation RealmViewController
+@implementation LXSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    Person *tom = [[Person alloc]init];
-    Dog *jack   = [[Dog alloc]init];
-    jack.owner  = tom;
-    
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    button.backgroundColor = kAppCommonColor;
+    [button setTitle:@"test" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(p_buttonAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:button];
 }
 
 - (void)didReceiveMemoryWarning {

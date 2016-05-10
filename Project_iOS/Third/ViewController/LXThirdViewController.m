@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 刘旭. All rights reserved.
 //
 
-#import "ThirdViewController.h"
+#import "LXThirdViewController.h"
 
-@interface ThirdViewController ()
+@interface LXThirdViewController ()
 
 @end
 
-@implementation ThirdViewController
+@implementation LXThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

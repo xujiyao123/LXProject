@@ -6,18 +6,18 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-#import "DTouchViewController.h"
-#import "DTouchDetailViewController.h"
+#import "LXDTouchViewController.h"
+#import "LXDTouchDetailViewController.h"
 #import "DTouchViewCell.h"
 
-@interface DTouchViewController ()<UIViewControllerPreviewingDelegate, UITableViewDataSource, UITableViewDelegate, DTouchDetailViewControllerDelegate>
+@interface LXDTouchViewController ()<UIViewControllerPreviewingDelegate, UITableViewDataSource, UITableViewDelegate, DTouchDetailViewControllerDelegate>
 
 @property (nonatomic, strong) UITableView    *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
-@implementation DTouchViewController
+@implementation LXDTouchViewController
 
 - (id)init {
     if (self = [super init]) {
@@ -64,18 +64,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DTouchDetailViewController *vc = [[DTouchDetailViewController alloc]init];
+    LXDTouchDetailViewController *vc = [[LXDTouchDetailViewController alloc]init];
     vc.labelText = [NSString stringWithFormat:@"%ld", indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 3d touch
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
-    if ([self.presentedViewController isKindOfClass:[DTouchDetailViewController class]]) {
+    if ([self.presentedViewController isKindOfClass:[LXDTouchDetailViewController class]]) {
         return nil;
     }
     else {
-        DTouchDetailViewController *vc = [[DTouchDetailViewController alloc] init];
+        LXDTouchDetailViewController *vc = [[LXDTouchDetailViewController alloc] init];
         vc.delegate                    = self;
         vc.preferredContentSize        = CGSizeMake(0, 500);
 //        previewingContext.sourceRect = previewingContext.sourceView.frame;

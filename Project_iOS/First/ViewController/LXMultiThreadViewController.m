@@ -6,15 +6,15 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-#import "MultiThreadViewController.h"
+#import "LXMultiThreadViewController.h"
 
-@interface MultiThreadViewController ()
+@interface LXMultiThreadViewController ()
 
 @property(nonatomic, strong) NSArray *array;
 
 @end
 
-@implementation MultiThreadViewController
+@implementation LXMultiThreadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

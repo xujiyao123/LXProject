@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface RunloopViewController : BaseViewController
+@interface LXRunloopViewController : BaseViewController
 
 @end

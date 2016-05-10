@@ -15,7 +15,7 @@
 @end
 
 
-@interface DTouchDetailViewController : BaseViewController
+@interface LXDTouchDetailViewController : BaseViewController
 
 @property (nonatomic, strong) NSString *labelText;
 @property (nonatomic, assign) NSInteger count;

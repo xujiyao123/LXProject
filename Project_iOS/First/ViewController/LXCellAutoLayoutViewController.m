@@ -6,19 +6,19 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-#import "CellAutoLayoutViewController.h"
+#import "LXCellAutoLayoutViewController.h"
 #import "CellAutoLayoutCell.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "AutoLayoutModel.h"
 
-@interface CellAutoLayoutViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface LXCellAutoLayoutViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
-@implementation CellAutoLayoutViewController
+@implementation LXCellAutoLayoutViewController
 
 - (id)init {
     if (self = [super init]) {

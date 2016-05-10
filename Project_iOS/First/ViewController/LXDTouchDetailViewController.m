@@ -6,13 +6,13 @@
 //  Copyright © 2015年 刘旭. All rights reserved.
 //
 
-#import "DTouchDetailViewController.h"
+#import "LXDTouchDetailViewController.h"
 
-@interface DTouchDetailViewController ()
+@interface LXDTouchDetailViewController ()
 
 @end
 
-@implementation DTouchDetailViewController
+@implementation LXDTouchDetailViewController
 
 - (id)init {
     if (self = [super init]) {
@@ -37,7 +37,7 @@
 
 - (NSArray<id<UIPreviewActionItem>> *)previewActionItems {
     
-    __weak DTouchDetailViewController *weakSelf = self;
+    __weak LXDTouchDetailViewController *weakSelf = self;
     
     UIPreviewAction *action = [UIPreviewAction actionWithTitle:@"赞" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         
