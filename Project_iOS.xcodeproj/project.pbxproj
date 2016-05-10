@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90121CEE1C34E1E400D4075D /* LXMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* LXMultiThreadViewController.m */; };
-		90121CF11C35153E00D4075D /* LXRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* LXRunloopViewController.m */; };
 		80F713BF1CCE09EC00B53BC0 /* AnnmateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F713BE1CCE09EC00B53BC0 /* AnnmateView.m */; };
 		80F713C71CCE132800B53BC0 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F713C61CCE132800B53BC0 /* UIView+Nib.m */; };
 		80F713CE1CCE15CF00B53BC0 /* AnnsubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */; };
-		90121CEE1C34E1E400D4075D /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CED1C34E1E400D4075D /* MultiThreadViewController.m */; };
-		90121CF11C35153E00D4075D /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90121CF01C35153E00D4075D /* RunloopViewController.m */; };
+		901E693B1CE1914F006877D4 /* LXMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */; };
+		901E693C1CE1914F006877D4 /* LXRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E693A1CE1914F006877D4 /* LXRunloopViewController.m */; };
 		902E161E1C3D598700C86F4F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E161D1C3D598700C86F4F /* AppUser.m */; };
 		902E16301C3D79AB00C86F4F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E162F1C3D79AB00C86F4F /* AppConfig.m */; };
 		904677CA1C1E71420026F096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677C91C1E71420026F096 /* main.m */; };
@@ -152,20 +150,15 @@
 /* Begin PBXFileReference section */
 		78FB942FDA4542A9264B7E9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8F59611FA324A4629878FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		90121CEC1C34E1E400D4075D /* LXMultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMultiThreadViewController.h; sourceTree = "<group>"; };
-		90121CED1C34E1E400D4075D /* LXMultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMultiThreadViewController.m; sourceTree = "<group>"; };
-		90121CEF1C35153E00D4075D /* LXRunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRunloopViewController.h; sourceTree = "<group>"; };
-		90121CF01C35153E00D4075D /* LXRunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRunloopViewController.m; sourceTree = "<group>"; };
 		80F713BD1CCE09EC00B53BC0 /* AnnmateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnmateView.h; sourceTree = "<group>"; };
 		80F713BE1CCE09EC00B53BC0 /* AnnmateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnmateView.m; sourceTree = "<group>"; };
 		80F713C51CCE132800B53BC0 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		80F713C61CCE132800B53BC0 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
 		80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnsubView.xib; sourceTree = "<group>"; };
-		90121CEC1C34E1E400D4075D /* MultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
-		90121CED1C34E1E400D4075D /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
-		90121CEF1C35153E00D4075D /* RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
-		90121CF01C35153E00D4075D /* RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
->>>>>>> 106c9022484c30b253ebf70644ec98ec6478b705
+		901E69381CE1914F006877D4 /* LXMultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMultiThreadViewController.h; sourceTree = "<group>"; };
+		901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMultiThreadViewController.m; sourceTree = "<group>"; };
+		901E693A1CE1914F006877D4 /* LXRunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRunloopViewController.m; sourceTree = "<group>"; };
+		901E693D1CE1915C006877D4 /* LXRunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRunloopViewController.h; sourceTree = "<group>"; };
 		902E161C1C3D598700C86F4F /* AppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUser.h; sourceTree = "<group>"; };
 		902E161D1C3D598700C86F4F /* AppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUser.m; sourceTree = "<group>"; };
 		902E162E1C3D79AB00C86F4F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
@@ -791,10 +784,10 @@
 				90FAE73F1C2952B100271AAA /* LXDTouchViewController.m */,
 				90B2A42C1C3427CE00739018 /* LXCellAutoLayoutViewController.h */,
 				90B2A42D1C3427CE00739018 /* LXCellAutoLayoutViewController.m */,
-				90121CEC1C34E1E400D4075D /* LXMultiThreadViewController.h */,
-				90121CED1C34E1E400D4075D /* LXMultiThreadViewController.m */,
-				90121CEF1C35153E00D4075D /* LXRunloopViewController.h */,
-				90121CF01C35153E00D4075D /* LXRunloopViewController.m */,
+				901E69381CE1914F006877D4 /* LXMultiThreadViewController.h */,
+				901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */,
+				901E693A1CE1914F006877D4 /* LXRunloopViewController.m */,
+				901E693D1CE1915C006877D4 /* LXRunloopViewController.h */,
 				90A81AAC1C52636400F33333 /* LXHTMLViewController.h */,
 				90A81AAD1C52636400F33333 /* LXHTMLViewController.m */,
 				90FAE7411C2959B100271AAA /* LXDTouchDetailViewController.h */,
@@ -1086,6 +1079,7 @@
 				908E6C3A1C1EB52200CDD941 /* PKAnimation+PKType.m in Sources */,
 				904678A61C1E73F60026F096 /* UIView+Additions.m in Sources */,
 				908E6C3E1C1EB52200CDD941 /* PKResManager.m in Sources */,
+				901E693B1CE1914F006877D4 /* LXMultiThreadViewController.m in Sources */,
 				904678CF1C1E73F60026F096 /* NSData+ImageContentType.m in Sources */,
 				904678A71C1E73F60026F096 /* UIWindow+RscExt.m in Sources */,
 				904678D01C1E73F60026F096 /* SDImageCache.m in Sources */,
@@ -1114,7 +1108,7 @@
 				904678A21C1E73F60026F096 /* UIFont+Ext.m in Sources */,
 				904678CA1C1E73F60026F096 /* TAPageControl.m in Sources */,
 				90C7F2FB1C1FF911003289EA /* AppContext.m in Sources */,
-				90121CF11C35153E00D4075D /* LXRunloopViewController.m in Sources */,
+				901E693C1CE1914F006877D4 /* LXRunloopViewController.m in Sources */,
 				904678971C1E73F60026F096 /* NSKeyedUnarchiver+ExceptionCatch.m in Sources */,
 				90B2A42A1C34278A00739018 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				90B2A42B1C34278A00739018 /* UIView+SDAutoLayout.m in Sources */,
@@ -1130,7 +1124,6 @@
 				90FAE7431C2959B100271AAA /* LXDTouchDetailViewController.m in Sources */,
 				904678DD1C1E73F60026F096 /* UIView+WebCacheOperation.m in Sources */,
 				80F713BF1CCE09EC00B53BC0 /* AnnmateView.m in Sources */,
-				9046E97B1C50D62400A77A66 /* TimeViewController.m in Sources */,
 				90DC38881C50B4DF00D120F3 /* UIView+GeometryAddition.m in Sources */,
 				904678A31C1E73F60026F096 /* UIImage+Addtional.m in Sources */,
 				9046789D1C1E73F60026F096 /* UIButton+Addictions.m in Sources */,
@@ -1179,7 +1172,6 @@
 				904677CD1C1E71420026F096 /* AppDelegate.m in Sources */,
 				90B2A4341C3429C900739018 /* AutoLayoutModel.m in Sources */,
 				904677CA1C1E71420026F096 /* main.m in Sources */,
-				90121CEE1C34E1E400D4075D /* LXMultiThreadViewController.m in Sources */,
 				904678D81C1E73F60026F096 /* UIImage+GIF.m in Sources */,
 				904678951C1E73F60026F096 /* NSDate+NSDateExt.m in Sources */,
 			);
