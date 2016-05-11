@@ -16,6 +16,7 @@
 #import "LXMultiThreadViewController.h"
 #import "LXRunloopViewController.h"
 #import "LXHTMLViewController.h"
+#import "LXTimerViewController.h"
 
 @interface LXFirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
@@ -24,13 +25,14 @@
 @property (nonatomic, strong) GuideView   *guideView;
 @property (nonatomic, strong) NSUserActivity *activity;
 
+
 @end
 
 @implementation LXFirstViewController
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"HTML片段"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"HTML片段", @"NSTimer保留环"];
     }
     return self;
 }
@@ -132,6 +134,9 @@
             break;
         case 4:
             vc = [[LXHTMLViewController alloc]init];
+            break;
+        case 5:
+            vc = [[LXTimerViewController alloc]init];
             break;
         default:
             break;

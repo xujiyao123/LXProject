@@ -12,6 +12,8 @@
 		80F713CE1CCE15CF00B53BC0 /* AnnsubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F713CD1CCE15CF00B53BC0 /* AnnsubView.xib */; };
 		901E693B1CE1914F006877D4 /* LXMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */; };
 		901E693C1CE1914F006877D4 /* LXRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E693A1CE1914F006877D4 /* LXRunloopViewController.m */; };
+		901E69401CE32660006877D4 /* NSTimer+LXTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E693F1CE32660006877D4 /* NSTimer+LXTimer.m */; };
+		901E69461CE327FB006877D4 /* LXTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E69451CE327FB006877D4 /* LXTimerViewController.m */; };
 		902E161E1C3D598700C86F4F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E161D1C3D598700C86F4F /* AppUser.m */; };
 		902E16301C3D79AB00C86F4F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E162F1C3D79AB00C86F4F /* AppConfig.m */; };
 		904677CA1C1E71420026F096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904677C91C1E71420026F096 /* main.m */; };
@@ -159,6 +161,10 @@
 		901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMultiThreadViewController.m; sourceTree = "<group>"; };
 		901E693A1CE1914F006877D4 /* LXRunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRunloopViewController.m; sourceTree = "<group>"; };
 		901E693D1CE1915C006877D4 /* LXRunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRunloopViewController.h; sourceTree = "<group>"; };
+		901E693E1CE3265F006877D4 /* NSTimer+LXTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+LXTimer.h"; sourceTree = "<group>"; };
+		901E693F1CE32660006877D4 /* NSTimer+LXTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+LXTimer.m"; sourceTree = "<group>"; };
+		901E69441CE327FB006877D4 /* LXTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTimerViewController.h; sourceTree = "<group>"; };
+		901E69451CE327FB006877D4 /* LXTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTimerViewController.m; sourceTree = "<group>"; };
 		902E161C1C3D598700C86F4F /* AppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUser.h; sourceTree = "<group>"; };
 		902E161D1C3D598700C86F4F /* AppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUser.m; sourceTree = "<group>"; };
 		902E162E1C3D79AB00C86F4F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
@@ -536,6 +542,8 @@
 				9046780C1C1E73F60026F096 /* UIView+Additions.m */,
 				9046780D1C1E73F60026F096 /* UIWindow+RscExt.h */,
 				9046780E1C1E73F60026F096 /* UIWindow+RscExt.m */,
+				901E693E1CE3265F006877D4 /* NSTimer+LXTimer.h */,
+				901E693F1CE32660006877D4 /* NSTimer+LXTimer.m */,
 			);
 			path = Addtional;
 			sourceTree = "<group>";
@@ -794,6 +802,8 @@
 				90FAE7421C2959B100271AAA /* LXDTouchDetailViewController.m */,
 				90D1FB8A1C2B0E1E0097CB1A /* LXRealmViewController.h */,
 				90D1FB8B1C2B0E1E0097CB1A /* LXRealmViewController.m */,
+				901E69441CE327FB006877D4 /* LXTimerViewController.h */,
+				901E69451CE327FB006877D4 /* LXTimerViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1092,6 +1102,7 @@
 				904678C71C1E73F60026F096 /* TAAbstractDotView.m in Sources */,
 				9087B55D1C313C72005346C4 /* FirstRequset.m in Sources */,
 				908E6C3C1C1EB52200CDD941 /* UIFont+PKFont.m in Sources */,
+				901E69461CE327FB006877D4 /* LXTimerViewController.m in Sources */,
 				9046789E1C1E73F60026F096 /* UIButton+RHCUIButtonExt.m in Sources */,
 				904678A51C1E73F60026F096 /* UITableViewAdditions.m in Sources */,
 				904678A11C1E73F60026F096 /* UIDevice+UIDeviceExt.m in Sources */,
@@ -1157,6 +1168,7 @@
 				904678CB1C1E73F60026F096 /* SDCollectionViewCell.m in Sources */,
 				9046789B1C1E73F60026F096 /* SMS_HYZBadgeView.m in Sources */,
 				904678941C1E73F60026F096 /* NSBundle+Scale.m in Sources */,
+				901E69401CE32660006877D4 /* NSTimer+LXTimer.m in Sources */,
 				904678CE1C1E73F60026F096 /* MKAnnotationView+WebCache.m in Sources */,
 				90FAE7371C29503200271AAA /* BaseTableViewCell.m in Sources */,
 				9046789C1C1E73F60026F096 /* UIBarButtonItem+Image.m in Sources */,
