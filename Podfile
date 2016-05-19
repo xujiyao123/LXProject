@@ -1,7 +1,10 @@
+platform:ios, '8.0'
+use_frameworks!
+target 'Project_iOS' do
 pod 'Masonry'
 pod 'YYKit'
-pod 'SVProgressHUD', :head
+pod 'SVProgressHUD'
 pod 'MJRefresh'
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+pod 'ReactiveCocoa'
 pod 'AFNetworking', '~> 3.0'
+end
