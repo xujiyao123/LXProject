@@ -17,6 +17,7 @@
 #import "LXRunloopViewController.h"
 #import "LXHTMLViewController.h"
 #import "LXTimerViewController.h"
+#import "LXCircleImageView.h"
 
 @interface LXFirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
@@ -24,7 +25,7 @@
 @property (nonatomic, strong) NSArray     *dataArray;
 @property (nonatomic, strong) GuideView   *guideView;
 @property (nonatomic, strong) NSUserActivity *activity;
-
+@property (nonatomic, strong) LXCircleImageView *imageView;
 
 @end
 
@@ -60,7 +61,45 @@
     _activity.eligibleForSearch = YES;
     [_activity becomeCurrent];
     [_activity invalidate];
+    
+    _imageView = [[LXCircleImageView alloc]initWithImage:[UIImage imageForKey:@"guideImg2"]];
+    _imageView.frame = CGRectMake(0, 0, 50, 50);
+    _imageView.backgroundColor = [UIColor redColor];
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, _imageView.image.size.width , _imageView.image.size.height)];
+    _imageView.image = [self imageCutter:_imageView.image bezierPath:path];
+    
+    [self.view addSubview:_imageView];
+    [UIView animateWithDuration:5 animations:^{
+        _imageView.frame = CGRectMake(SCREEN_WIDTH - 100, 0, 150, 150);
+        [_imageView drawImage];
+//        _imageView.layer.cornerRadius = _imageView.height / 2;
+    }];
 }
+
+- (UIImage *)imageCutter:(UIImage *)sourceImage
+              bezierPath:(UIBezierPath *)path
+{
+    
+    //1.开启上下文
+    
+    UIGraphicsBeginImageContextWithOptions(sourceImage.size, NO, 0);
+    //2.获取裁剪区域
+    //    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, sourceImage.size.width, sourceImage.size.height)];
+    
+    //将路径设置为裁剪区域
+    [path addClip];
+    
+    //3.绘制图片
+    [sourceImage drawAtPoint:CGPointZero];
+    
+    //4.生成图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    //5.关闭上下文
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 
 - (void)userActivityWasContinued:(NSUserActivity *)userActivity {
     
