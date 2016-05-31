@@ -8,6 +8,7 @@
 
 #import "CellAutoLayoutCell.h"
 #import "UIView+SDAutoLayout.h"
+#import "AutoLayoutModel.h"
 
 @interface CellAutoLayoutCell ()
 

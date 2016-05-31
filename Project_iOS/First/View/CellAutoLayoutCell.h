@@ -7,12 +7,10 @@
 //
 
 #import "BaseTableViewCell.h"
-#import "AutoLayoutModel.h"
+@class AutoLayoutModel;
 
 @interface CellAutoLayoutCell : BaseTableViewCell
 
 @property (nonatomic, strong) AutoLayoutModel *model;
-
-- (void)setModel:(AutoLayoutModel *)model;
 
 @end
