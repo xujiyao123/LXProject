@@ -7,4 +7,5 @@ pod 'SVProgressHUD'
 pod 'MJRefresh'
 pod 'ReactiveCocoa'
 pod 'AFNetworking', '~> 3.0'
+pod 'FMDB'
 end

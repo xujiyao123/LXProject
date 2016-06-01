@@ -25,7 +25,7 @@
         label.backgroundColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = [NSString stringWithFormat:@"%d",arc4random() % 10];
-        [self addSubview:label]; 
+        [self addSubview:label];
     }
     
     return self;

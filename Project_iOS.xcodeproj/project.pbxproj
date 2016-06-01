@@ -133,6 +133,7 @@
 		90FAE7431C2959B100271AAA /* LXDTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7421C2959B100271AAA /* LXDTouchDetailViewController.m */; };
 		90FAE7531C2A4AC300271AAA /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE7521C2A4AC300271AAA /* GuideView.m */; };
 		91E5A298DF0B57913B7DA572 /* Pods_Project_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36CAD343A011713AA762F28 /* Pods_Project_iOS.framework */; };
+		A7A755A31CFE99A600639BF6 /* LXFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A755A21CFE99A600639BF6 /* LXFMDBViewController.m */; };
 		A7B733581CEF0BEC001EB784 /* LXCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B733571CEF0BEC001EB784 /* LXCircleImageView.m */; };
 /* End PBXBuildFile section */
 
@@ -385,6 +386,8 @@
 		90FAE7511C2A4AC300271AAA /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
 		90FAE7521C2A4AC300271AAA /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
 		A36CAD343A011713AA762F28 /* Pods_Project_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A755A11CFE99A600639BF6 /* LXFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFMDBViewController.h; sourceTree = "<group>"; };
+		A7A755A21CFE99A600639BF6 /* LXFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFMDBViewController.m; sourceTree = "<group>"; };
 		A7B733561CEF0BEC001EB784 /* LXCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCircleImageView.h; sourceTree = "<group>"; };
 		A7B733571CEF0BEC001EB784 /* LXCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCircleImageView.m; sourceTree = "<group>"; };
 		CA7A7F2BDFF3B1CFA0010499 /* Pods-Project_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project_iOS/Pods-Project_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -799,8 +802,8 @@
 				90B2A42D1C3427CE00739018 /* LXCellAutoLayoutViewController.m */,
 				901E69381CE1914F006877D4 /* LXMultiThreadViewController.h */,
 				901E69391CE1914F006877D4 /* LXMultiThreadViewController.m */,
-				901E693A1CE1914F006877D4 /* LXRunloopViewController.m */,
 				901E693D1CE1915C006877D4 /* LXRunloopViewController.h */,
+				901E693A1CE1914F006877D4 /* LXRunloopViewController.m */,
 				90A81AAC1C52636400F33333 /* LXHTMLViewController.h */,
 				90A81AAD1C52636400F33333 /* LXHTMLViewController.m */,
 				90FAE7411C2959B100271AAA /* LXDTouchDetailViewController.h */,
@@ -809,6 +812,8 @@
 				90D1FB8B1C2B0E1E0097CB1A /* LXRealmViewController.m */,
 				901E69441CE327FB006877D4 /* LXTimerViewController.h */,
 				901E69451CE327FB006877D4 /* LXTimerViewController.m */,
+				A7A755A11CFE99A600639BF6 /* LXFMDBViewController.h */,
+				A7A755A21CFE99A600639BF6 /* LXFMDBViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1090,6 +1095,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A755A31CFE99A600639BF6 /* LXFMDBViewController.m in Sources */,
 				904678D41C1E73F60026F096 /* SDWebImageDownloaderOperation.m in Sources */,
 				908E6C3A1C1EB52200CDD941 /* PKAnimation+PKType.m in Sources */,
 				904678A61C1E73F60026F096 /* UIView+Additions.m in Sources */,

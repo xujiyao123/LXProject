@@ -18,6 +18,7 @@
 #import "LXHTMLViewController.h"
 #import "LXTimerViewController.h"
 #import "LXCircleImageView.h"
+#import "LXFMDBViewController.h"
 
 @interface LXFirstViewController ()<UITableViewDataSource, UITableViewDelegate, NSUserActivityDelegate>
 
@@ -33,7 +34,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"HTML片段", @"NSTimer保留环"];
+        self.dataArray = @[@"3d touch", @"cell自适应", @"多线程", @"runloop", @"HTML片段", @"NSTimer保留环", @"FMDB"];
     }
     return self;
 }
@@ -177,6 +178,8 @@
         case 5:
             vc = [[LXTimerViewController alloc]init];
             break;
+        case 6:
+            vc = [[LXFMDBViewController alloc]init];
         default:
             break;
     }
