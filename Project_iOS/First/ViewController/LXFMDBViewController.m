@@ -8,6 +8,7 @@
 
 #import "LXFMDBViewController.h"
 #import <FMDB/FMDB.h>
+#import "FMDBModel.h"
 
 @interface LXFMDBViewController ()
 
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) UITextField *nameTextField;
 @property (nonatomic, strong) UITextField *sexTextField;
 @property (nonatomic, strong) UITextField *ageTextField;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 
 @end
@@ -53,10 +55,16 @@
         NSLog(@"数据库打开成功");
         FMResultSet *result = [_database executeQuery:[NSString stringWithFormat:@"select * from people"]];
         NSLog(@"%@", result);
-        if (result.next) {
-            NSDictionary *dic = result.resultDictionary;
-            NSLog(@"%@", dic);
+        _dataArray = [NSMutableArray array];
+        //将表里所有列全都取出来放到数组里
+        while (result.next) {
+            FMDBModel *model = [[FMDBModel alloc]init];
+            model.name = [result stringForColumn:@"name"];
+            model.sex = [result stringForColumn:@"sex"];
+            model.age = [result stringForColumn:@"age"];
+            [_dataArray addObject:model];
         }
+        NSLog(@"%@", _dataArray);
     }
     if ([_database executeQuery:@"select * from people"]) {
         NSLog(@"people表已存在");
